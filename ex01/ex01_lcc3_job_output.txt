@@ -1,0 +1,195 @@
+========== Starting building ================
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/site/hpc/spack/v0.19-lcc3-20230919/opt/spack/linux-rocky8-westmere/gcc-8.5.0/gcc-12.2.0-p4pe45vebc7w5leppo2eeesyakewpbxf/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/site/hpc/spack/v0.19-lcc3-20230919/opt/spack/linux-rocky8-westmere/gcc-8.5.0/gcc-12.2.0-p4pe45vebc7w5leppo2eeesyakewpbxf/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cb76/cb761245/perf-oriented-dev/small_samples/build
+[1/12] Building C object CMakeFiles/filesearch.dir/filesearch/filesearch.c.o
+[2/12] Building C object CMakeFiles/filegen.dir/filegen/filegen.c.o
+[3/12] Building C object CMakeFiles/mmul.dir/mmul/mmul.c.o
+[4/12] Linking C executable filesearch
+[5/12] Building C object CMakeFiles/nbody.dir/nbody/nbody.c.o
+[6/12] Building C object CMakeFiles/qap.dir/qap/qap.c.o
+[7/12] Linking C executable filegen
+[8/12] Linking C executable mmul
+[9/12] Linking C executable qap
+[10/12] Linking C executable nbody
+[11/12] Building C object CMakeFiles/delannoy.dir/delannoy/delannoy.c.o
+[12/12] Linking C executable delannoy
+========== Starting running ================
+========== Run 1 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 2 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 3 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 4 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 5 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 6 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 7 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 8 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 9 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 10 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 11 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 12 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 13 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 14 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========== Run 15 / 15 ==========
+Verification: OK
+Verification: OK
+Verification: OK
+Loading Problem File ../qap/problems/chr15c.dat ..
+  - problem size: 15
+  - optimum: 9504
+Run solver ...
+Done!
+Best Result: 9504
+Verification: OK
+========= Starting cleaning ================
