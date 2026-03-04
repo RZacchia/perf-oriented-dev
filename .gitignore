@@ -13,3 +13,4 @@ tools/build_release
 **/CMakeFiles/*
 *.cmake
 */CmakeCache.txt
+*.log

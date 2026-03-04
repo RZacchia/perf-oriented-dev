@@ -65,6 +65,9 @@ int main(int argc, char** argv) {
             min_file_size = atoi(argv[3]);
             max_file_size = atoi(argv[4]);
             break;
+        case 1:
+            fprintf(stdout, "Using default parameters: num_directories=1, num_files_per_directory=10, min_file_size=1024 bytes, max_file_size=1048576 bytes, seed=1234\n");
+            break;
         default:
             fprintf(stderr, "Usage: %s <num_directories> <num_files_per_directory> <min_file_size> <max_file_size> [<seed>]\n", argv[0]);
             return 1;
