@@ -2,7 +2,7 @@
 
 #SBATCH --partition=lva
 #SBATCH --job-name ex01
-#SBATCH --output=%j_output.log
+#SBATCH --output=%j_job_output.log
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --exclusive
@@ -20,24 +20,29 @@ cd ~/perf-oriented-dev/small_samples/build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
 
+LOG="../../${SLURM_JOB_ID}.log"
+
+run_timed () {
+  # $1 = name, rest = command...
+  local name="$1"; shift
+  /bin/time -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
+}
+
+
+
 
 echo ========== Starting running ================
 for i in {1..15}
-do
-echo "Run $i / 10"
-echo ============ Delannoy ================
-time  ./delannoy 10
-echo ============ Filegen ================
-time  ./filegen
-echo ============ mmul ================
-time  ./mmul
-echo ============ nbody ================
-time  ./nbody
-echo ============ qap ================
-time  ./qap ../qap/problems/chr15b.dat
-done
+    do
+    echo "========== Run $i / 15 =========="
+    run_timed delannoy ./delannoy 13    
+    run_timed filegen ./filegen 3 40 1024 1048576
+    run_timed mmul ./mmul
+    run_timed nbody ./nbody
+    run_timed qap ./qap ../qap/problems/chr15c.dat
+    done
 
-# python3 ../parse_bench_log.py ../${SLURM_JOB_ID}_output.log ../results_${SLURM_JOB_ID}.csv
+python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../${SLURM_JOB_ID}_results.csv
 
 echo ========= Starting cleaning ================
 rm -rf ~/perf-oriented-dev/small_samples/build

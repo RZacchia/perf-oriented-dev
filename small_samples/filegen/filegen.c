@@ -48,8 +48,8 @@ int main(int argc, char** argv) {
     int num_directories, num_files, min_file_size, max_file_size, seed;
 
     // Set default values for the parameters
-    num_directories = 1;
-    num_files = 10;
+    num_directories = 2;
+    num_files = 20;
     min_file_size = 1024;
     max_file_size = 1048576;
     seed = 1234; // Set default seed to 1234

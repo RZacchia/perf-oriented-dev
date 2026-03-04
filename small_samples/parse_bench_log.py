@@ -1,110 +1,118 @@
 #!/usr/bin/env python3
-import re
 import csv
+import re
 import sys
+import math
+from collections import defaultdict
 from statistics import mean
 
-# Matches your banner lines like:
-# echo ============ Delannoy ================
-BANNER_RE = re.compile(r"=+\s*([A-Za-z0-9_.-]+)\s*=+")
+CPU_RE = re.compile(r"^\s*(\d+(?:\.\d+)?)%\s*$")
 
-# GNU time default includes "... 0:00.12elapsed ..."
-GNU_ELAPSED_RE = re.compile(r"(?P<t>\d+:\d+(?::\d+)?(?:\.\d+)?)\s*elapsed")
-
-# POSIX time format includes:
-# real 0m0.123s
-POSIX_REAL_RE = re.compile(r"^\s*real\s+(?P<m>\d+)m(?P<s>\d+(?:\.\d+)?)s\s*$")
-
-def parse_hms_like_to_seconds(t: str) -> float:
-    """
-    Converts:
-      - M:SS(.sss)
-      - H:MM:SS(.sss)
-    to seconds.
-    """
-    parts = t.split(":")
-    if len(parts) == 2:
-        m = int(parts[0])
-        s = float(parts[1])
-        return m * 60.0 + s
-    if len(parts) == 3:
-        h = int(parts[0])
-        m = int(parts[1])
-        s = float(parts[2])
-        return h * 3600.0 + m * 60.0 + s
-    # Fallback: try float
-    return float(t)
-
-def population_variance(xs):
+def pop_variance(xs):
     if not xs:
         return 0.0
     mu = mean(xs)
     return sum((x - mu) ** 2 for x in xs) / len(xs)
 
-def extract_times(log_path: str):
-    times = {}  # program -> [seconds]
-    current_prog = None
+def pop_stddev(xs):
+    return math.sqrt(pop_variance(xs))
 
-    with open(log_path, "r", encoding="utf-8", errors="replace") as f:
-        for line in f:
-            # Detect program section banner
-            m = BANNER_RE.search(line)
-            if m:
-                current_prog = m.group(1)
-                times.setdefault(current_prog, [])
+def pct_stddev(xs):
+    """(stddev/mean)*100; returns 0 if empty or mean==0."""
+    if not xs:
+        return 0.0
+    mu = mean(xs)
+    if mu == 0:
+        return 0.0
+    return (pop_stddev(xs) / mu) * 100.0
+
+def parse_cpu_pct(s: str) -> float:
+    m = CPU_RE.match(s)
+    if not m:
+        raise ValueError(f"Bad cpu field (expected like '99%'): {s!r}")
+    return float(m.group(1))
+
+def read_log(path: str):
+    """
+    Reads lines:
+      name,elapsed,user,system,cpu%,peakmem
+    Returns dict name -> dict of lists.
+    """
+    data = defaultdict(lambda: {"wall": [], "cpu": [], "mem": []})
+
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
+        for lineno, line in enumerate(f, start=1):
+            line = line.strip()
+            if not line or line.startswith("#"):
                 continue
 
-            if current_prog is None:
-                continue
+            parts = [p.strip() for p in line.split(",")]
+            if len(parts) != 6:
+                raise ValueError(f"{path}:{lineno}: expected 6 comma-separated fields, got {len(parts)}: {line!r}")
 
-            # Try GNU elapsed style first: "... 0:00.12elapsed ..."
-            g = GNU_ELAPSED_RE.search(line)
-            if g:
-                sec = parse_hms_like_to_seconds(g.group("t"))
-                times[current_prog].append(sec)
-                continue
+            name, wall_s, user_s, sys_s, cpu_s, mem_kb = parts
 
-            # Try POSIX real style: "real 0m0.123s"
-            p = POSIX_REAL_RE.match(line)
-            if p:
-                sec = int(p.group("m")) * 60.0 + float(p.group("s"))
-                times[current_prog].append(sec)
-                continue
+            try:
+                wall = float(wall_s)
+                # user/system are present but not needed for output; parse to validate
+                _user = float(user_s)
+                _sys = float(sys_s)
+                cpu = parse_cpu_pct(cpu_s)
+                mem = float(mem_kb)
+            except ValueError as e:
+                raise ValueError(f"{path}:{lineno}: {e}") from e
 
-    return times
+            data[name]["wall"].append(wall)
+            data[name]["cpu"].append(cpu)
+            data[name]["mem"].append(mem)
 
-def write_csv(times_by_prog, out_csv_path: str):
-    with open(out_csv_path, "w", newline="", encoding="utf-8") as f:
+    return data
+
+def write_summary(data, out_csv: str):
+    with open(out_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["programname", "avg_time_seconds", "variance_time_seconds2"])
+        w.writerow([
+            "program",
+            "avg_wall",
+            "var_wall",
+            "pct_std_wall",
+            "avg_cpu_pct",
+            "avg_peak_mem_kb",
+        ])
 
-        for prog in sorted(times_by_prog.keys()):
-            xs = times_by_prog[prog]
-            if xs:
-                avg = mean(xs)
-                var = population_variance(xs)
-            else:
-                avg = 0.0
-                var = 0.0
-            w.writerow([prog, f"{avg:.6f}", f"{var:.6f}"])
+        for name in sorted(data.keys()):
+            wall = data[name]["wall"]
+            cpu = data[name]["cpu"]
+            mem = data[name]["mem"]
+
+            avg_wall = mean(wall) if wall else 0.0
+            var_wall = pop_variance(wall)
+            pct_wall = pct_stddev(wall)
+
+            avg_cpu = mean(cpu) if cpu else 0.0
+            avg_mem = mean(mem) if mem else 0.0
+
+            w.writerow([
+                name,
+                f"{avg_wall:.6f}",
+                f"{var_wall:.6f}",
+                f"{pct_wall:.6f}",
+                f"{avg_cpu:.2f}",
+                f"{avg_mem:.2f}",
+            ])
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python parse_bench_log.py <logfile.txt> <output.csv>", file=sys.stderr)
+    if len(sys.argv) != 3:
+        print("Usage: python parse_bench_log.py <input_log.log> <output.csv>", file=sys.stderr)
         sys.exit(2)
 
-    log_path = sys.argv[1]
-    out_csv = sys.argv[2]
+    inp, outp = sys.argv[1], sys.argv[2]
+    data = read_log(inp)
 
-    times_by_prog = extract_times(log_path)
+    if not data:
+        print("Warning: no data parsed (empty file?)", file=sys.stderr)
 
-    # Helpful warning if nothing was parsed
-    total = sum(len(v) for v in times_by_prog.values())
-    if total == 0:
-        print("Warning: No timings found. Ensure your log contains GNU '...elapsed' or POSIX 'real XmY.s' lines.",
-              file=sys.stderr)
-
-    write_csv(times_by_prog, out_csv)
+    write_summary(data, outp)
 
 if __name__ == "__main__":
     main()
