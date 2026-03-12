@@ -21,7 +21,7 @@ int random_number(int min, int max) {
 
 void create_files(const char* dirname, int num_files, int min_file_size, int max_file_size) {
     char full_dirname[MAX_FILENAME_LENGTH];
-    snprintf(full_dirname, MAX_FILENAME_LENGTH, "generated/%s", dirname);
+    snprintf(full_dirname, MAX_FILENAME_LENGTH, "/tmp/generated/%s", dirname);
     mkdir(full_dirname, 0755); // Create the directory
 
     int j;
@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
 
     srand(seed); // Seed the random number generator
 
-    mkdir("generated", 0755); // Create the parent directory
+    mkdir("/tmp/generated", 0755); // Create the parent directory
 
     int i;
     for (i = 0; i < num_directories; i++) {

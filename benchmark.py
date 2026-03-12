@@ -35,6 +35,7 @@ import shlex
 import subprocess
 import sys
 from pathlib import Path
+from time import sleep
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 TimeOutputValues = Tuple[float, float, float, float, int]
@@ -71,7 +72,7 @@ def _run_cmd(
             capture_output=capture_output,
             text=True,
         )
-
+    
     return subprocess.run(
         list(cmd),
         cwd=cwd,
@@ -115,13 +116,14 @@ def _run_benchmark(
         for _ in range(warmups):
             _run_once(name, cmd, cwd, record=False)
 
-    minimum_runs = 10
+    minimum_runs = 5
     rows: List[Dict[str, Any]] = []
+    total_vars: List[VarianceValues] = []
     running_var: VarianceValues = (0.0, 0.0, 0.0, 0.0, 0.0)
     target_std_devs: VarianceValues = (target_std_dev,) * 5 
 
     i = 1
-    max_i = 15
+    max_i = 50
     while i <= max_i:  # hard cap to prevent infinite loops
         print(f"[{name}] Run {i}")
         row = _run_once(name, cmd, cwd, record=True)
@@ -142,6 +144,7 @@ def _run_benchmark(
                 _compute_percent_dev(cpu_pct_values),
                 _compute_percent_dev(max_rss_kb_values),
             )
+            total_vars.append(running_var)
 
             print(f"[{name}] Variance after {i} runs: {running_var}")
 
@@ -154,8 +157,7 @@ def _run_benchmark(
             i += 1
     if i >= 100:
         print(f"[{name}] WARNING: Reached maximum runs without meeting target variance.")
-
-    return rows, running_var
+    return rows, running_var, total_vars
 
 
 
@@ -249,6 +251,7 @@ def _write_csv(path: Path, rows: List[Dict[str, Any]]) -> None:
         writer.writeheader()
         writer.writerows(rows)
 
+
 def _write_vars(path: Path,names: List[str], runs: List[int], vars: List[VarianceValues]) -> None:
     
     with open(path, "w", newline="", encoding="utf-8") as f:
@@ -329,10 +332,11 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         bench_cwd = bench.get("cwd")
         cwd_path = Path(bench_cwd) if bench_cwd else global_cwd_path
-        rows, var = _run_benchmark(name, cmd, cwd_path, target_std_dev=opts.std_dev, warmups=opts.warmups)
+        rows, var, total_vars = _run_benchmark(name, cmd, cwd_path, target_std_dev=opts.std_dev, warmups=opts.warmups)
         all_rows.extend(rows)
         vars.append(var)
         runs.append(len(rows))
+        sleep(2)  # small delay between benchmarks to reduce interference
 
 
     _write_csv(out_path, all_rows)
