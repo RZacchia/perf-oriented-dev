@@ -1,0 +1,21 @@
+{
+  "cwd": "small_samples/build",
+  "build": [
+    "cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release",
+    "ninja"
+  ],
+  "benchmarks": [
+    {
+      "name": "delannoy_plain",
+      "cmd": ["./delannoy", "14"]
+    },
+    {
+      "name": "delannoy_load",
+      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh ./delannoy", "14"]
+    },
+    {
+      "name": "mmul",
+      "cmd": "./mmul"
+    }
+  ]
+}
