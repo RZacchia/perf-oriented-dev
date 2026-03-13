@@ -15,34 +15,27 @@ module load python/3.10.8-gcc-8.5.0-r5lf3ij # a newer version of python
 
 echo ========== Starting building ================
 
-mkdir -p ~/perf-oriented-dev/small_samples/build
-cd ~/perf-oriented-dev/small_samples/build
+mkdir -p /tmp/cb761245/
+
+
+
+mkdir -p ~/perf-oriented-dev/tools/build
+cd ~/perf-oriented-dev/tools/build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
 
-LOG="../../${SLURM_JOB_ID}.log"
+cd ~/perf-oriented-dev/
 
-run_timed () {
-  # $1 = name, rest = command...
-  local name="$1"; shift
-  /bin/time -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
-}
+echo ========== Starting Running with external CPU load ================
+python3 benchmark.py -c bench_config_lcc3.json -o lcc3_cpu.csv
 
 
 
+echo ========== Starting Running with external I/O load ================
+python3 benchmark.py -c io_bench_config_lcc3.json -o lcc3_io.csv
 
-echo ========== Starting running ================
-for i in {1..15}
-    do
-    echo "========== Run $i / 15 =========="
-    run_timed delannoy ./delannoy 13    
-    run_timed filegen ./filegen 3 40 1024 1048576
-    run_timed mmul ./mmul
-    run_timed nbody ./nbody
-    run_timed qap ./qap ../qap/problems/chr15c.dat
-    done
-
-python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../${SLURM_JOB_ID}_results.csv
 
 echo ========= Starting cleaning ================
-rm -rf ~/perf-oriented-dev/small_samples/build
+rm -r ~/perf-oriented-dev/small_samples/build
+rm -r ~/perf-oriented-dev/tools/build
+rm -r /tmp/cb761245/
