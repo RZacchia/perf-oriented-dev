@@ -1,31 +1,3 @@
-"""Build + run C benchmarks and emit a CSV for violin plots.
-
-This is designed to match the style of `job.sh` in this repo:
-- One build step for everything (e.g. `cmake && ninja`).
-- Repeated runs of each benchmark using `/bin/time -f "%e %U %S %P %M"`.
-- Outputs a CSV suitable for downstream plotting.
-
-Config example (bench.json):
-
-{
-  "build": [
-    "cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release",
-    "ninja"
-  ],
-  "benchmarks": [
-    {"name": "delannoy", "cmd": ["./delannoy", "13"], "cwd": "small_samples/build"},
-    {"name": "filegen", "cmd": ["./filegen", "3", "40", "1024", "1048576"], "cwd": "small_samples/build"},
-    {"name": "mmul", "cmd": "./mmul", "cwd": "small_samples/build"}
-  ]
-}
-
-Usage:
-  python benchmark.py --config bench.json --out results.csv --runs 15 --warmups 1
-
-Output CSV columns:
-  benchmark, run, wall_s, user_s, sys_s, cpu_pct, max_rss_kb, command
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -35,12 +7,11 @@ import shlex
 import subprocess
 import sys
 from pathlib import Path
-from time import sleep
+from time import sleep, time
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 TimeOutputValues = Tuple[float, float, float, float, int]
 VarianceValues = Tuple[float, float, float, float, float]
-StdDeviationValues = Tuple[float, float, float, float, float]
 
 
 def _parse_time_output(output: str) -> TimeOutputValues:
@@ -127,6 +98,7 @@ def _run_benchmark(
     while i <= max_i:  # hard cap to prevent infinite loops
         print(f"[{name}] Run {i}")
         row = _run_once(name, cmd, cwd, record=True)
+        time.sleep(1)  # small delay between runs to reduce interference
         if row:
             row["run"] = i
             rows.append(row)

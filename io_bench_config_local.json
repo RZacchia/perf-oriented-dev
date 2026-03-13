@@ -1,0 +1,27 @@
+{
+  "cwd": "small_samples/build",
+  "build": [
+    "cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release",
+    "ninja"
+  ],
+  "benchmarks": [
+    {
+      "name": "filegen",
+      "cmd": ["./filegen", "3", "40", "1024", "1048576"]
+    },
+    {
+      "name": "filegen_load",
+      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576"],
+      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+    },
+    {
+      "name": "filesearch",
+      "cmd": "./filesearch"
+    },
+    {
+      "name": "filesearch_load",
+      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filesearch"],
+      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+    }
+  ]
+}

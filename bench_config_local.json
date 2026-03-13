@@ -20,7 +20,7 @@
     },
     {
       "name": "filegen_load",
-      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576"],
+      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"],
       "cwd": "/home/robert/Desktop/perf-oriented-dev/"
     },
     {

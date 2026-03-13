@@ -20,5 +20,6 @@ add_executable(loadcapture load_generator/loadcapture.c load_generator/loadutils
 add_executable(loadgen load_generator/loadgen.c load_generator/loadutils.c)
 add_executable(loadprofile load_generator/loadprofile.c load_generator/loadutils.c)
 add_executable(loadtest load_generator/loadtest.c load_generator/loadutils.c)
+add_executable(ioloadgen io_load_generator/ioloadgen.c)
 
 add_executable(malloctest malloctest/malloctest.c)

@@ -3,6 +3,8 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <time.h>
+#include <signal.h>
+#include <stdbool.h>
 
 #define MAX_FILENAME_LENGTH 256
 
@@ -44,15 +46,24 @@ void create_files(const char* parent_dir, const char* dirname, int num_files, in
     }
 }
 
-int main(int argc, char** argv) {
-    int num_directories, num_files, min_file_size, max_file_size, seed;
-    char* parent_dir = "/tmp/generated";
+static bool run = true;
+void handler(int param) {
+  (void)(param);
+  run = false;
+}
 
+int main(int argc, char** argv) {
+    signal(SIGINT, handler);
+    signal(SIGTERM, handler);
+    int num_directories, num_files, min_file_size, max_file_size, seed;
+    char* parent_dir;
+    
     // Set default values for the parameters
     num_directories = 2;
     num_files = 20;
     min_file_size = 1024;
     max_file_size = 1048576;
+    parent_dir = "/tmp/generated";
     seed = 1234; // Set default seed to 1234
 
     // Parse command line arguments
@@ -81,12 +92,19 @@ int main(int argc, char** argv) {
 
     mkdir(parent_dir, 0755); // Create the parent directory
 
-    int i;
-    for (i = 0; i < num_directories; i++) {
-        char dirname[MAX_FILENAME_LENGTH];
-        snprintf(dirname, MAX_FILENAME_LENGTH, "dir_%d", i);
-        create_files(parent_dir, dirname, num_files, min_file_size, max_file_size);
+
+
+    while (run)
+    {
+        for (int i = 0; i < num_directories; i++) {
+            char dirname[MAX_FILENAME_LENGTH];
+            snprintf(dirname, MAX_FILENAME_LENGTH, "dir_%d", i);
+            create_files(parent_dir, dirname, num_files, min_file_size, max_file_size);
+        }
     }
+    
+
+    
 
     return 0;
 }
