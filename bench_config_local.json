@@ -25,11 +25,11 @@
     },
     {
       "name": "filesearch",
-      "cmd": "./filesearch"
+      "cmd": ["./filesearch", "/tmp/cb761245/generated"]
     },
     {
       "name": "filesearch_load",
-      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filesearch"],
+      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filesearch", "/tmp/cb761245/generated"],
       "cwd": "/home/robert/Desktop/perf-oriented-dev/"
     },
     {

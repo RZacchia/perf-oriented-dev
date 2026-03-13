@@ -80,25 +80,25 @@ def _run_benchmark(
     cmd: Union[str, Sequence[str]],
     cwd: Optional[Path],
     target_std_dev: float,
-    warmups: int,
+    min_runs: int = 10,
+    max_runs: int = 100,
+    warmups: int = 1,
 ) -> Tuple[List[Dict[str, Any]], VarianceValues]:
     if warmups > 0:
         print(f"[{name}] Warmup: {warmups} run(s)")
         for _ in range(warmups):
             _run_once(name, cmd, cwd, record=False)
 
-    minimum_runs = 5
     rows: List[Dict[str, Any]] = []
     total_vars: List[VarianceValues] = []
     running_var: VarianceValues = (0.0, 0.0, 0.0, 0.0, 0.0)
     target_std_devs: VarianceValues = (target_std_dev,) * 5 
 
     i = 1
-    max_i = 50
-    while i <= max_i:  # hard cap to prevent infinite loops
+    while i <= max_runs:  # hard cap to prevent infinite loops
         print(f"[{name}] Run {i}")
         row = _run_once(name, cmd, cwd, record=True)
-        time.sleep(1)  # small delay between runs to reduce interference
+        sleep(1)  # small delay between runs to reduce interference
         if row:
             row["run"] = i
             rows.append(row)
@@ -108,7 +108,7 @@ def _run_benchmark(
             sys_s_values = [r["sys_s"] for r in rows]
             cpu_pct_values = [r["cpu_pct"] for r in rows]
             max_rss_kb_values = [r["max_rss_kb"] for r in rows]
-
+            
             running_var = (
                 _compute_percent_dev(wall_s_values),
                 _compute_percent_dev(user_s_values),
@@ -123,11 +123,11 @@ def _run_benchmark(
             # Check if we've met the target variance for all metrics.
             if all(
                 running_var[j] <= target_std_devs[j] for j in range(5)
-            ) and i >= minimum_runs:
+            ) and i >= min_runs:
                 print(f"[{name}] Target variance met after {i} runs.")
                 break
             i += 1
-    if i >= 100:
+    if i >= max_runs:
         print(f"[{name}] WARNING: Reached maximum runs without meeting target variance.")
     return rows, running_var, total_vars
 
@@ -253,6 +253,18 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         help="Target standard deviation in percent for each metric (after warmups)",
     )
     p.add_argument(
+        "--min-runs",
+        type=int,
+        default=10,
+        help="Minimum number of runs per benchmark (not recorded)",
+    )
+    p.add_argument(
+        "--max-runs",
+        type=int,
+        default=100,
+        help="Maximum number of runs per benchmark (not recorded)",
+    )
+    p.add_argument(
         "--warmups",
         type=int,
         default=1,
@@ -304,7 +316,14 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         bench_cwd = bench.get("cwd")
         cwd_path = Path(bench_cwd) if bench_cwd else global_cwd_path
-        rows, var, total_vars = _run_benchmark(name, cmd, cwd_path, target_std_dev=opts.std_dev, warmups=opts.warmups)
+        rows, var, total_vars = _run_benchmark(name, 
+                                               cmd, 
+                                               cwd_path, 
+                                               target_std_dev=opts.std_dev,
+                                               warmups=opts.warmups, 
+                                               min_runs=opts.min_runs,
+                                               max_runs=opts.max_runs
+                                               )
         all_rows.extend(rows)
         vars.append(var)
         runs.append(len(rows))

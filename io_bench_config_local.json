@@ -20,7 +20,7 @@
     },
     {
       "name": "filesearch_load",
-      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filesearch"],
+      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filesearch", "/tmp/cb761245/generated"],
       "cwd": "/home/robert/Desktop/perf-oriented-dev/"
     }
   ]
