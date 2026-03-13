@@ -261,7 +261,7 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument(
         "--max-runs",
         type=int,
-        default=20,
+        default=40,
         help="Maximum number of runs per benchmark (not recorded)",
     )
     p.add_argument(
