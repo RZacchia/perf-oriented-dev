@@ -6,6 +6,15 @@
   ],
   "benchmarks": [
     {
+      "name": "delannoy",
+      "cmd": ["./delannoy", "14"]
+    },
+    {
+      "name": "delannoy_load",
+      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "./small_samples/build/delannoy", "14"],
+      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+    },    
+    {
       "name": "filegen",
       "cmd": ["./filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"]
     },
