@@ -7,11 +7,12 @@ void find_largest_file(char *dir_path, long long *max_size, char *max_file);
 
 int main(int argc, char** argv) {
     long long max_size = 0;
-    char* parent_dir = "/tmp/cb761245/search/";
+
+    char* parent_dir = "/tmp/cb761245/generated/";
     char max_file[256] = "";
 
     if(argc == 2){
-        parent_dir=argv[2];
+        parent_dir=argv[1];
     }
     // Start the search in the current directory
     find_largest_file(parent_dir, &max_size, max_file);

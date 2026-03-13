@@ -249,7 +249,7 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument(
         "--std_dev",
         type=float,
-        default=5.0,
+        default=1.0,
         help="Target standard deviation in percent for each metric (after warmups)",
     )
     p.add_argument(
@@ -261,7 +261,7 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument(
         "--max-runs",
         type=int,
-        default=100,
+        default=20,
         help="Maximum number of runs per benchmark (not recorded)",
     )
     p.add_argument(

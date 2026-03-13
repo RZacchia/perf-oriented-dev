@@ -6,22 +6,8 @@
   ],
   "benchmarks": [
     {
-      "name": "delannoy",
-      "cmd": ["./delannoy", "14"]
-    },
-    {
-      "name": "delannoy_load",
-      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "./small_samples/build/delannoy", "14"],
-      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
-    },
-    {
       "name": "filegen",
-      "cmd": ["./filegen", "3", "40", "1024", "1048576"]
-    },
-    {
-      "name": "filegen_load",
-      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"],
-      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+      "cmd": ["./filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"]
     },
     {
       "name": "filesearch",
@@ -29,7 +15,7 @@
     },
     {
       "name": "filesearch_load",
-      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filesearch", "/tmp/cb761245/generated"],
+      "cmd": ["./tools/load_generator/exec_with_workstation_heavy.sh", "small_samples/build/filesearch", "/tmp/cb761245/"],
       "cwd": "/home/robert/Desktop/perf-oriented-dev/"
     },
     {
