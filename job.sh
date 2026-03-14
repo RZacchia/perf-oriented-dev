@@ -15,11 +15,13 @@ module load python/3.10.8-gcc-8.5.0-r5lf3ij # a newer version of python
 
 echo ========== Starting building ================
 
+rm -r /tmp/cb761245/
 mkdir -p /tmp/cb761245/
 
 
 
 mkdir -p ~/perf-oriented-dev/tools/build
+mkdir -p ~/perf-oriented-dev/small_samples/build
 cd ~/perf-oriented-dev/tools/build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
@@ -27,12 +29,12 @@ ninja
 cd ~/perf-oriented-dev/
 
 echo ========== Starting Running with external CPU load ================
-python3 benchmark.py -c bench_config_lcc3.json -o lcc3_cpu.csv
+python3 benchmark.py -c bench_config_lcc3.json -o lcc3_cpu.csv --min-runs 10 --max-runs 30 --std_dev 5
 
 
 
-echo ========== Starting Running with external I/O load ================
-python3 benchmark.py -c io_bench_config_lcc3.json -o lcc3_io.csv
+# echo ========== Starting Running with external I/O load ================
+# python3 benchmark.py -c io_bench_config_lcc3.json -o lcc3_io.csv --min-runs 10 --max-runs 30 --std_dev 5
 
 
 echo ========= Starting cleaning ================
