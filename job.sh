@@ -29,12 +29,12 @@ ninja
 cd ~/perf-oriented-dev/
 
 echo ========== Starting Running with external CPU load ================
-python3 benchmark.py -c bench_config_lcc3.json -o lcc3_cpu.csv --min-runs 10 --max-runs 30 --std_dev 5
+# python3 benchmark.py -c bench_config_lcc3.json -o lcc3_cpu.csv --min-runs 10 --max-runs 30 --std_dev 5
 
 
 
 # echo ========== Starting Running with external I/O load ================
-# python3 benchmark.py -c io_bench_config_lcc3.json -o lcc3_io.csv --min-runs 10 --max-runs 30 --std_dev 5
+python3 benchmark.py -c io_bench_config_lcc3.json -o lcc3_io.csv --min-runs 10 --max-runs 30 --std_dev 5
 
 
 echo ========= Starting cleaning ================
