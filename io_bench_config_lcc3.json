@@ -7,21 +7,21 @@
   "benchmarks": [
     {
       "name": "filegen",
-      "cmd": ["./filegen", "3", "40", "1024", "1048576"]
+      "cmd": ["./filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"]
     },
     {
       "name": "filegen_load",
-      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576"],
-      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+      "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filegen", "3", "40", "1024", "1048576", "/tmp/cb761245/generated"],
+      "cwd": "/home/cb76/cb761245/perf-oriented-dev/"
     },
     {
-      "name": "filesearch",
+      "name": ["filesearch", "/home/cb76/cb761245"],
       "cmd": "./filesearch"
     },
     {
       "name": "filesearch_load",
       "cmd": ["./tools/io_load_generator/exec_with_io_load.sh", "small_samples/build/filesearch", "/tmp/cb761245/generated"],
-      "cwd": "/home/robert/Desktop/perf-oriented-dev/"
+      "cwd": "/home/cb76/cb761245/perf-oriented-dev/"
     }
   ]
 }
