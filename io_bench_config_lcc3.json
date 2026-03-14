@@ -15,8 +15,8 @@
       "cwd": "/home/cb76/cb761245/perf-oriented-dev/"
     },
     {
-      "name": ["filesearch", "/home/cb76/cb761245"],
-      "cmd": "./filesearch"
+      "name":"filesearch",
+      "cmd": ["./filesearch", "/home/cb76/cb761245"]
     },
     {
       "name": "filesearch_load",
