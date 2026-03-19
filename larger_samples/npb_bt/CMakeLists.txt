@@ -4,9 +4,10 @@ project(perf_prog_npb_bt)
 set_property(GLOBAL PROPERTY C_STANDARD 11)
 
 if(MSVC)
-  add_compile_options(/W4)
+  add_compile_options(/W4 -pg)
 else()
-  add_compile_options(-Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter)
+  add_compile_options(-Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -pg)
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pg")
 endif()
 
 file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS src/*.c src/*.h)
