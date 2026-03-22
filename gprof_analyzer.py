@@ -59,7 +59,7 @@ def main():
 
             plt.figure(figsize=(12, 6))
             plt.bar(funcs, avgs, yerr=stds, capsize=5, color='skyblue', edgecolor='black')
-            plt.title(f'Average % Time for Profile {profile_type.upper()} (Top 10 Functions)', fontsize=16)
+            plt.title(f'Average % Time for Local Profile {profile_type.upper()} (Top 10 Functions)', fontsize=16)
             plt.ylabel('% Time', fontsize=14)
             plt.xlabel('Functions', fontsize=14)
             plt.xticks(rotation=45, ha='right')
