@@ -1,0 +1,255 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 32.20     22.61    22.61 146029716     0.00     0.00  binvcrhs
+ 18.26     35.43    12.82 146029716     0.00     0.00  matmul_sub
+ 11.58     43.57     8.13      201    40.45   105.55  z_solve
+ 11.52     51.66     8.09      201    40.25   105.35  y_solve
+ 10.64     59.13     7.47      201    37.17   102.27  x_solve
+  9.56     65.84     6.71      202    33.22    33.22  compute_rhs
+  5.20     69.49     3.65 146029716     0.00     0.00  matvec_sub
+  0.48     69.83     0.34                             add
+  0.17     69.95     0.12  4195072     0.00     0.00  exact_solution
+  0.14     70.05     0.10  2317932     0.00     0.00  binvrhs
+  0.10     70.12     0.07                             set_constants
+  0.10     70.19     0.07  2317932     0.00     0.00  lhsinit
+  0.03     70.21     0.02                             exact_rhs
+  0.03     70.23     0.02                             initialize
+  0.01     70.24     0.01        1    10.00    10.00  rhs_norm
+  0.00     70.24     0.00        2     0.00     0.00  wtime_
+  0.00     70.24     0.00        1     0.00     7.50  error_norm
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.01% of 70.24 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.1    0.00   69.63                 adi [1]
+                8.13   13.09     201/201         z_solve [3]
+                8.09   13.09     201/201         y_solve [4]
+                7.47   13.09     201/201         x_solve [5]
+                6.68    0.00     201/202         compute_rhs [7]
+-----------------------------------------------
+                7.54    0.00 48676572/146029716     x_solve [5]
+                7.54    0.00 48676572/146029716     y_solve [4]
+                7.54    0.00 48676572/146029716     z_solve [3]
+[2]     32.2   22.61    0.00 146029716         binvcrhs [2]
+-----------------------------------------------
+                8.13   13.09     201/201         adi [1]
+[3]     30.2    8.13   13.09     201         z_solve [3]
+                7.54    0.00 48676572/146029716     binvcrhs [2]
+                4.27    0.00 48676572/146029716     matmul_sub [6]
+                1.22    0.00 48676572/146029716     matvec_sub [8]
+                0.03    0.00  772644/2317932     binvrhs [12]
+                0.02    0.00  772644/2317932     lhsinit [14]
+-----------------------------------------------
+                8.09   13.09     201/201         adi [1]
+[4]     30.1    8.09   13.09     201         y_solve [4]
+                7.54    0.00 48676572/146029716     binvcrhs [2]
+                4.27    0.00 48676572/146029716     matmul_sub [6]
+                1.22    0.00 48676572/146029716     matvec_sub [8]
+                0.03    0.00  772644/2317932     binvrhs [12]
+                0.02    0.00  772644/2317932     lhsinit [14]
+-----------------------------------------------
+                7.47   13.09     201/201         adi [1]
+[5]     29.3    7.47   13.09     201         x_solve [5]
+                7.54    0.00 48676572/146029716     binvcrhs [2]
+                4.27    0.00 48676572/146029716     matmul_sub [6]
+                1.22    0.00 48676572/146029716     matvec_sub [8]
+                0.03    0.00  772644/2317932     binvrhs [12]
+                0.02    0.00  772644/2317932     lhsinit [14]
+-----------------------------------------------
+                4.27    0.00 48676572/146029716     x_solve [5]
+                4.27    0.00 48676572/146029716     y_solve [4]
+                4.27    0.00 48676572/146029716     z_solve [3]
+[6]     18.3   12.82    0.00 146029716         matmul_sub [6]
+-----------------------------------------------
+                0.03    0.00       1/202         verify [15]
+                6.68    0.00     201/202         adi [1]
+[7]      9.6    6.71    0.00     202         compute_rhs [7]
+-----------------------------------------------
+                1.22    0.00 48676572/146029716     x_solve [5]
+                1.22    0.00 48676572/146029716     y_solve [4]
+                1.22    0.00 48676572/146029716     z_solve [3]
+[8]      5.2    3.65    0.00 146029716         matvec_sub [8]
+-----------------------------------------------
+                                                 <spontaneous>
+[9]      0.5    0.34    0.00                 add [9]
+-----------------------------------------------
+                0.01    0.00  262144/4195072     error_norm [18]
+                0.02    0.00  738048/4195072     exact_rhs [16]
+                0.09    0.00 3194880/4195072     initialize [11]
+[10]     0.2    0.12    0.00 4195072         exact_solution [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     0.2    0.02    0.09                 initialize [11]
+                0.09    0.00 3194880/4195072     exact_solution [10]
+-----------------------------------------------
+                0.03    0.00  772644/2317932     x_solve [5]
+                0.03    0.00  772644/2317932     y_solve [4]
+                0.03    0.00  772644/2317932     z_solve [3]
+[12]     0.1    0.10    0.00 2317932         binvrhs [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     0.1    0.07    0.00                 set_constants [13]
+-----------------------------------------------
+                0.02    0.00  772644/2317932     x_solve [5]
+                0.02    0.00  772644/2317932     y_solve [4]
+                0.02    0.00  772644/2317932     z_solve [3]
+[14]     0.1    0.07    0.00 2317932         lhsinit [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     0.1    0.00    0.05                 verify [15]
+                0.03    0.00       1/202         compute_rhs [7]
+                0.01    0.00       1/1           rhs_norm [17]
+                0.00    0.01       1/1           error_norm [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     0.1    0.02    0.02                 exact_rhs [16]
+                0.02    0.00  738048/4195072     exact_solution [10]
+-----------------------------------------------
+                0.01    0.00       1/1           verify [15]
+[17]     0.0    0.01    0.00       1         rhs_norm [17]
+-----------------------------------------------
+                0.00    0.01       1/1           verify [15]
+[18]     0.0    0.00    0.01       1         error_norm [18]
+                0.01    0.00  262144/4195072     exact_solution [10]
+-----------------------------------------------
+                0.00    0.00       1/2           timer_start [33]
+                0.00    0.00       1/2           timer_stop [34]
+[19]     0.0    0.00    0.00       2         wtime_ [19]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [9] add                    [10] exact_solution         [13] set_constants
+   [2] binvcrhs               [11] initialize             [19] wtime_
+  [12] binvrhs                [14] lhsinit                 [5] x_solve
+   [7] compute_rhs             [6] matmul_sub              [4] y_solve
+  [18] error_norm              [8] matvec_sub              [3] z_solve
+  [16] exact_rhs              [17] rhs_norm
