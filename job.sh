@@ -24,15 +24,15 @@ ninja
 PROGRAM="./npb_bt_a"
 
 echo ========== Starting performance measurements ================
-echo l1-dcache-loads,l1-dcache-load-misses,l1-dcache-stores,l1-dcache-store-misses
-perf stat -r 3 -e L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses $PROGRAM
-echo l1-icache-loads,l1-icache-load-misses
-perf stat -r 3 -e L1-dcache-prefetches,L1-dcache-prefetch-misses,L1-icache-loads,L1-icache-load-misses $PROGRAM
-perf stat -r 3 -e LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses $PROGRAM
-perf stat -r 3 -e LLC-prefetches,LLC-prefetch-misses $PROGRAM
-perf stat -r 3 -e dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses $PROGRAM
-perf stat -r 3 -e iTLB-loads,iTLB-load-misses $PROGRAM
-perf stat -r 3 -e node-loads,node-load-misses,node-stores,node-store-misses $PROGRAM
-perf stat -r 3 -e node-prefetches,node-prefetch-misses $PROGRAM
+# echo l1-dcache-loads,l1-dcache-load-misses,l1-dcache-stores,l1-dcache-store-misses
+# perf stat -r 3 -e L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses $PROGRAM
+# echo l1-icache-loads,l1-icache-load-misses
+# perf stat -r 3 -e L1-dcache-prefetches,L1-dcache-prefetch-misses,L1-icache-loads,L1-icache-load-misses $PROGRAM
+# perf stat -r 3 -e LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses $PROGRAM
+# perf stat -r 3 -e LLC-prefetches,LLC-prefetch-misses $PROGRAM
+# perf stat -r 3 -e dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses $PROGRAM
+# perf stat -r 3 -e iTLB-loads,iTLB-load-misses $PROGRAM
+# perf stat -r 3 -e node-loads,node-load-misses,node-stores,node-store-misses $PROGRAM
+# perf stat -r 3 -e node-prefetches,node-prefetch-misses $PROGRAM
 perf stat -r 3 -e branch-loads,branch-load-misses $PROGRAM
 

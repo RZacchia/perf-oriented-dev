@@ -55,3 +55,64 @@
     11,450,973,619      branch-load-misses:u                                          ( +-  0.29% )
 
             31.431 +- 0.734 seconds time elapsed  ( +-  2.33% )
+
+
+
+
+             Performance counter stats for './npb_bt_a' (3 runs):
+
+   171,881,586,131      L1-dcache-loads:u                                             ( +-  0.00% )
+     6,844,625,487      L1-dcache-load-misses:u   #    3.98% of all L1-dcache accesses  ( +-  0.11% )
+    75,588,936,971      L1-dcache-stores:u                                            ( +-  0.00% )
+     2,422,937,074      L1-dcache-store-misses:u                                      ( +-  0.04% )
+
+            76.023 +- 0.146 seconds time elapsed  ( +-  0.19% )
+
+        11,437,233,240      L1-dcache-prefetches:u                                        ( +-  0.05% )
+     4,342,615,778      L1-dcache-prefetch-misses:u                                     ( +-  0.24% )
+   147,856,100,544      L1-icache-loads:u                                             ( +-  0.36% )
+        61,079,380      L1-icache-load-misses:u   #    0.04% of all L1-icache accesses  ( +-  1.60% )
+
+            76.382 +- 0.502 seconds time elapsed  ( +-  0.66% )
+
+           631,825,001      LLC-loads:u                                                   ( +-  0.33% )  (50.00%)
+       312,980,506      LLC-load-misses:u         #   49.23% of all LL-cache accesses  ( +-  0.32% )  (50.00%)
+       461,239,106      LLC-stores:u                                                  ( +-  2.85% )  (50.00%)
+        28,794,823      LLC-store-misses:u                                            ( +-  3.28% )  (50.00%)
+
+            76.476 +- 0.135 seconds time elapsed  ( +-  0.18% )
+
+           760,733,018      LLC-prefetches:u                                              ( +-  1.85% )
+       474,637,019      LLC-prefetch-misses:u                                         ( +-  0.73% )
+
+            76.002 +- 0.118 seconds time elapsed  ( +-  0.16% )
+
+      171,881,586,722      dTLB-loads:u                                                  ( +-  0.00% )
+         1,143,887      dTLB-load-misses:u        #    0.00% of all dTLB cache accesses  ( +-  0.78% )
+    75,588,937,368      dTLB-stores:u                                                 ( +-  0.00% )
+           408,046      dTLB-store-misses:u                                           ( +-  0.38% )
+
+            76.037 +- 0.178 seconds time elapsed  ( +-  0.23% )
+
+    406,238,072,459      iTLB-loads:u                                                  ( +-  0.00% )
+            23,582      iTLB-load-misses:u        #    0.00% of all iTLB cache accesses  ( +-  8.95% )
+
+            76.947 +- 0.724 seconds time elapsed  ( +-  0.94% )
+
+
+    314,657,471      node-loads:u                                                  ( +-  0.86% )  (50.00%)
+             4,793      node-load-misses:u                                            ( +- 14.33% )  (50.00%)
+        28,521,114      node-stores:u                                                 ( +-  0.95% )  (50.00%)
+                 0      node-store-misses:u                                           (50.00%)
+
+            76.597 +- 0.132 seconds time elapsed  ( +-  0.17% )
+
+       471,035,399      node-prefetches:u                                             ( +-  0.69% )
+             1,702      node-prefetch-misses:u                                        ( +-337.91% )
+
+            75.965 +- 0.106 seconds time elapsed  ( +-  0.14% )
+
+              6,769,192,751      branch-loads:u                                                ( +-  0.00% )
+     5,031,653,337      branch-load-misses:u                                          ( +-  0.33% )
+
+            76.035 +- 0.234 seconds time elapsed  ( +-  0.31% )
