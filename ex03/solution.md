@@ -31,10 +31,18 @@ gprof ./npb_bt_b gmon_b.out > profile_b.txt
 Differences between _a and _b on lcc3.
 
 
-The main difference between local and lcc3 execution were the overall execution time. I could not find sufficient variations in percentage of the different functions between the two systems to warrant further analysis:
+The main difference between local and lcc3 execution were the overall execution time. There are some differences in percentage and variance.
+Interessting is, that z_solve is only on profile B on the lcc3 above the other axis. And there is also the differences between the axis solve algorithms the highest. This could be explained since, the loop order inside z_solve is worse and in profile B the size is 102x102x102 instead of 64x64x64 in a. This makes z_solve to have more cache misses in b than in profile a.
+Since the cache on my local machine is higher, we cannot see the same issue here.
+
+
+| Profile A | Profile B |
+|-----------|-----------|
+| ![Profile A](profile_a_local_stats.png) | ![Profile B](profile_b_local_stats.png) |
+| ![Profile A](profile_a_lcc3_stats.png) | ![Profile B](profile_b_lcc3_stats.png) |
 
 
 
 
 
-## Task 2 Tracy
+
