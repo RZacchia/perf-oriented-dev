@@ -1,0 +1,57 @@
+ Performance counter stats for './ssca2 17' (3 runs):
+
+    11,105,442,445      L1-dcache-loads:u                                             ( +-  0.00% )
+     4,279,907,487      L1-dcache-load-misses:u   #   38.54% of all L1-dcache accesses  ( +-  0.02% )
+     2,637,019,633      L1-dcache-stores:u                                            ( +-  0.00% )
+       652,741,411      L1-dcache-store-misses:u                                      ( +-  0.00% )
+
+           32.1512 +- 0.0514 seconds time elapsed  ( +-  0.16% )
+
+    639,137,780      L1-dcache-prefetches:u                                        ( +-  0.03% )
+    473,696,938      L1-dcache-prefetch-misses:u                                     ( +-  0.08% )
+    31,095,765,651      L1-icache-loads:u                                             ( +-  0.04% )
+           147,474      L1-icache-load-misses:u   #    0.00% of all L1-icache accesses  ( +-  7.41% )
+
+            32.317 +- 0.179 seconds time elapsed  ( +-  0.55% )
+
+    2,784,685,611      LLC-loads:u                                                   ( +-  0.17% )  (50.00%)
+       288,068,550      LLC-load-misses:u         #   10.38% of all LL-cache accesses  ( +-  0.51% )  (50.00%)
+     1,957,309,673      LLC-stores:u                                                  ( +-  1.05% )  (50.00%)
+        41,361,397      LLC-store-misses:u                                            ( +-  0.94% )  (50.00%)
+
+         32.213 +- 0.252 seconds time elapsed  ( +-  0.78% )
+
+         5,014,374      LLC-prefetches:u                                              ( +-  0.81% )
+         1,075,609      LLC-prefetch-misses:u                                         ( +-  3.64% )
+
+            32.093 +- 0.313 seconds time elapsed  ( +-  0.97% )
+
+    11,105,442,001      dTLB-loads:u                                                  ( +-  0.00% )
+     1,499,218,955      dTLB-load-misses:u        #   13.50% of all dTLB cache accesses  ( +-  0.23% )
+     2,637,019,535      dTLB-stores:u                                                 ( +-  0.00% )
+       286,149,960      dTLB-store-misses:u                                           ( +-  0.24% )
+
+32.2115 +- 0.0336 seconds time elapsed  ( +-  0.10% )
+    
+    34,542,844,917      iTLB-loads:u                                                  ( +-  0.00% )
+            83,692      iTLB-load-misses:u        #    0.00% of all iTLB cache accesses  ( +-  8.01% )
+
+             29.18 +- 1.85 seconds time elapsed  ( +-  6.34% )
+
+    290,839,019      node-loads:u                                                  ( +-  0.31% )  (50.00%)
+             1,646      node-load-misses:u                                            ( +- 40.91% )  (50.00%)
+        42,079,390      node-stores:u                                                 ( +-  0.79% )  (50.00%)
+                 0      node-store-misses:u                                           (50.00%)
+
+           32.4932 +- 0.0339 seconds time elapsed  ( +-  0.10% )
+
+     951,435      node-prefetches:u                                             ( +-  5.97% )
+                76      node-prefetch-misses:u                                        ( +- 87.61% )
+
+             30.25 +- 2.03 seconds time elapsed  ( +-  6.72% )
+
+
+              5,715,236,592      branch-loads:u                                                ( +-  0.00% )
+    11,450,973,619      branch-load-misses:u                                          ( +-  0.29% )
+
+            31.431 +- 0.734 seconds time elapsed  ( +-  2.33% )

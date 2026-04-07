@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=lva
-#SBATCH --job-name ex03
+#SBATCH --job-name ex04
 #SBATCH --output=%j_job_output.log
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
@@ -20,42 +20,19 @@ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
 
 
-./npb_bt_a
-mv gmon.out gmon_a.out
-gprof ./npb_bt_a gmon_a.out > profile_a_lcc3_1.txt
 
-./npb_bt_a
-mv gmon.out gmon_a.out
-gprof ./npb_bt_a gmon_a.out > profile_a_lcc3_2.txt
+PROGRAM="./npb_bt_a"
 
-./npb_bt_a
-mv gmon.out gmon_a.out
-gprof ./npb_bt_a gmon_a.out > profile_a_lcc3_3.txt
+echo ========== Starting performance measurements ================
+echo l1-dcache-loads,l1-dcache-load-misses,l1-dcache-stores,l1-dcache-store-misses
+perf stat -r 3 -e L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses $PROGRAM
+echo l1-icache-loads,l1-icache-load-misses
+perf stat -r 3 -e L1-dcache-prefetches,L1-dcache-prefetch-misses,L1-icache-loads,L1-icache-load-misses $PROGRAM
+perf stat -r 3 -e LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses $PROGRAM
+perf stat -r 3 -e LLC-prefetches,LLC-prefetch-misses $PROGRAM
+perf stat -r 3 -e dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses $PROGRAM
+perf stat -r 3 -e iTLB-loads,iTLB-load-misses $PROGRAM
+perf stat -r 3 -e node-loads,node-load-misses,node-stores,node-store-misses $PROGRAM
+perf stat -r 3 -e node-prefetches,node-prefetch-misses $PROGRAM
+perf stat -r 3 -e branch-loads,branch-load-misses $PROGRAM
 
-./npb_bt_a
-mv gmon.out gmon_a.out
-gprof ./npb_bt_a gmon_a.out > profile_a_lcc3_4.txt
-
-./npb_bt_a
-mv gmon.out gmon_a.out
-gprof ./npb_bt_a gmon_a.out > profile_a_lcc3_5.txt
-
-./npb_bt_b
-mv gmon.out gmon_b.out
-gprof ./npb_bt_b gmon_b.out > profile_b_lcc3_1.txt
-
-./npb_bt_b
-mv gmon.out gmon_b.out
-gprof ./npb_bt_b gmon_b.out > profile_b_lcc3_2.txt
-
-./npb_bt_b
-mv gmon.out gmon_b.out
-gprof ./npb_bt_b gmon_b.out > profile_b_lcc3_3.txt
-
-./npb_bt_b
-mv gmon.out gmon_b.out
-gprof ./npb_bt_b gmon_b.out > profile_b_lcc3_4.txt
-
-./npb_bt_b
-mv gmon.out gmon_b.out
-gprof ./npb_bt_b gmon_b.out > profile_b_lcc3_5.txt
