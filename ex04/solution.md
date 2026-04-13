@@ -110,6 +110,7 @@ For both programs:
 | node-prefetch-misses | 0.008% (±87.61%) | 0.0004% (±337.91%) |
 | branch-load-misses | 200.40% (±0.29%) | 74.33% (±0.33%) |
 
+![alt text](perf_relative_metrics.png)
 
  * How significant is the perturbation in execution time caused by using perf to measure performance counters?
 
@@ -127,3 +128,5 @@ For both programs:
 | node-prefetch | `30.25 ±2.03 s` | `75.965 ±0.106 s` |
 | branch | `31.431 ±0.734 s` | `76.035 ±0.234 s` |
 | baseline (no counters) | `31.673 ±0.862 s` | `76.766 ±0.122 s` |
+
+![alt text](perf_relative_metrics.png)
