@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=lva
-#SBATCH --job-name ex04
+#SBATCH --job-name ex05
 #SBATCH --output=%j_job_output.log
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
