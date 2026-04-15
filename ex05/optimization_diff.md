@@ -1,4 +1,4 @@
-According to the documentation of gcc 12.2.0 the following flags are different between o2 and o3.
+According to the documentation of gcc 12.2.0 the following flags are different between o2 and o3 verified .
   https://gcc.gnu.org/onlinedocs/gcc-12.2.0/gcc/Optimize-Options.html
 
 > -fgcse-after-reload <br>
@@ -15,10 +15,6 @@ According to the documentation of gcc 12.2.0 the following flags are different b
 > -fvect-cost-model= very cheap -> dynamic  <br>
 > -fversion-loops-for-strides <br>
 
-but when I list out the optimizations flags directly in gcc 12.2.0 on lcc3 the following flag was also changed.
-
->  -funroll-completely-grow-size 	[enabled]
-
 
 ```
 mmul: default (S=1000)
@@ -29,3 +25,4 @@ delannoy: 13
 npb_bt: W
 ssca: 15
 ```
+fvect-cost-model=dynamic

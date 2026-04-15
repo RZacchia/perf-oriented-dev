@@ -12,7 +12,7 @@ module load gcc/12.2.0-gcc-8.5.0-p4pe45v
 module load cmake/3.24.3-gcc-8.5.0-svdlhox
 module load ninja/1.11.1-python-3.10.8-gcc-8.5.0-2oc4wj6
 module load python/3.10.8-gcc-8.5.0-r5lf3ij
-
+gcc -Q --help=optimizer -O3 | grep funroll
 echo =============== Cleanup =================
 rm -rf ~/perf-oriented-dev/small_samples/build
 rm -rf ~/perf-oriented-dev/larger_samples/ssca2/build
@@ -88,7 +88,7 @@ for i in {1..15}
     run_timed2 scca2 ./ssca2 15
     done
 
-python3 ~/perf-oriented-dev/parse_bench_log.py ~/perf-oriented-dev/${SLURM_JOB_ID}.log ~/perf-oriented-dev/results_Ofast.csv
+python3 ~/perf-oriented-dev/parse_bench_log.py ~/perf-oriented-dev/${SLURM_JOB_ID}.log ~/perf-oriented-dev/results_fversion_loops_for_strides.csv
 
 echo =============== Cleanup =================
 rm -rf ~/perf-oriented-dev/small_samples/build

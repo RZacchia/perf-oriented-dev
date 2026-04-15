@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot benchmark medians from results_O*.csv files grouped by process name."""
+"""Plot benchmark medians from results_*.csv files grouped by process name."""
 
 from __future__ import annotations
 
@@ -12,24 +12,17 @@ from typing import Dict, List
 import matplotlib.pyplot as plt
 
 
-def infer_opt_order(opt_name: str) -> int:
-    if opt_name == "O0":
-        return 0
-    if opt_name == "O1":
-        return 1
+def get_sort_key(opt_name: str) -> tuple[int, str]:
     if opt_name == "O2":
-        return 2
-    if opt_name == "O3":
-        return 3
-    if opt_name == "Os":
-        return 4
-    if opt_name.startswith("O") and opt_name[1:].isdigit():
-        return int(opt_name[1:])
-    return 100
+        return (0, "")
+    elif opt_name == "O3":
+        return (2, "")
+    else:
+        return (1, opt_name)
 
 
 def collect_results(source_dir: Path) -> tuple[List[str], List[str], Dict[str, Dict[str, float]]]:
-    paths = sorted(source_dir.glob("results_*.csv"), key=lambda p: infer_opt_order(p.stem.replace("results_", "")))
+    paths = sorted(source_dir.glob("results_*.csv"), key=lambda p: get_sort_key(p.stem.replace("results_", "")))
     if not paths:
         raise FileNotFoundError("No results_*.csv files found in the current directory.")
 
@@ -86,7 +79,7 @@ def plot_results(opt_labels: List[str], process_names: List[str], results: Dict[
 def main() -> None:
     parser = argparse.ArgumentParser(description="Plot results_O*.csv files by benchmark process name.")
     parser.add_argument("--dir", default=".", help="Directory containing results_O*.csv files.")
-    parser.add_argument("--output", default="results_optimization_flags.png", help="Output image path.")
+    parser.add_argument("--output", default="results_optimization_flags_2.png", help="Output image path.")
     args = parser.parse_args()
 
     source_dir = Path(args.dir).resolve()
