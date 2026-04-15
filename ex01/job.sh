@@ -42,7 +42,7 @@ for i in {1..15}
     run_timed qap ./qap ../qap/problems/chr15c.dat
     done
 
-python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../${SLURM_JOB_ID}_results.csv
+python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../results_O3.csv
 
 echo ========= Starting cleaning ================
 rm -rf ~/perf-oriented-dev/small_samples/build
