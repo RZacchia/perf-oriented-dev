@@ -53,7 +53,7 @@ def plot_results(opt_labels: List[str], process_names: List[str], results: Dict[
     fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(10 * ncols, 4 * nrows), squeeze=False)
     axes_flat = [ax for row in axes for ax in row]
 
-    colors = plt.get_cmap("tab10")(range(len(opt_labels)))
+    colors = plt.get_cmap("tab20")(range(len(opt_labels)))
 
     for index, process_name in enumerate(process_names):
         ax = axes_flat[index]
@@ -61,8 +61,13 @@ def plot_results(opt_labels: List[str], process_names: List[str], results: Dict[
         ax.bar(opt_labels, values, color=colors, edgecolor="black")
         ax.set_title(process_name)
         ax.set_xlabel("Optimization flag")
-        ax.set_ylim(bottom=0)
-        ax.grid(axis="y", linestyle="--", alpha=0.4)
+        ax.grid(axis="y", linestyle="--", alpha=0.7, linewidth=0.5)
+        ax.set_xticklabels(opt_labels, rotation=45, ha='right')
+
+        # Set ylim to make differences visible
+        valid_values = [v for v in values if not math.isnan(v)]
+        if valid_values:
+            ax.set_ylim(bottom=min(valid_values) * 0.9)
 
         if index % ncols == 0:
             ax.set_ylabel("Median execution time")
