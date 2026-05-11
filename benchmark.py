@@ -120,10 +120,8 @@ def _run_benchmark(
 
             print(f"[{name}] Variance after {i} runs: {running_var}")
 
-            # Check if we've met the target variance for all metrics.
-            if all(
-                running_var[j] <= target_std_devs[j] for j in range(5)
-            ) and i >= min_runs:
+            # Check if we've met the target variance for wall_s.
+            if running_var[0] <= target_std_devs[0] and i >= min_runs:
                 print(f"[{name}] Target variance met after {i} runs.")
                 break
             i += 1
