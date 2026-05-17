@@ -11,6 +11,12 @@
 
 using namespace std;
 
+enum class ContainerType{
+    Vector,
+    ForwardList
+};
+
+
 struct Metrics
 {
     string name;
@@ -24,12 +30,38 @@ forward_list<Node> initializeListArbitrary(int count, int size);
 
 vector<Node> initializeVector(int count, int size);
 
-vector<chrono::milliseconds> singleRun(int split, int size, int elements, container<Metrics> &metrics)
+vector<chrono::milliseconds> singleRun(int split, int size, int elements)
 {
-    auto arr = initializeVector(elements, size);
+    auto arr = initializeVector(elements, size + 1);
     auto listSeq = initializeListSequential(elements, size);
     auto listArb = initializeListArbitrary(elements, size);
+
+    int modeChangeIndex = (int)(100.0f / (100.0f - (float)split));
+
+    bool isWrite = false;
+    bool isInsert = false;
+
+
+    for(int i = 1; i <= 100; i++){
+
+        if(i % modeChangeIndex == 0){
+            isInsert ? cout << i << " Insert" << endl : cout << i << " Remove" << endl;
+            isInsert = !isInsert;
+        } else {
+            isWrite ? cout << i << " Write" << endl : cout << i << " Read" << endl;
+            isWrite = !isWrite;
+        }
+
+    }
+
+
+
+
+
+
 }
+
+
 
 int main(int argc, char **argv)
 {
@@ -37,7 +69,7 @@ int main(int argc, char **argv)
 
     if (argc == 1)
     {
-        split = 90;
+        split = 95;
         size = 8;
         elements = 100;
         cout << "using default values " << endl;
@@ -53,16 +85,14 @@ int main(int argc, char **argv)
         size = stoi(argv[2]);
         elements = stoi(argv[3]);
     }
+
+    split = clamp(split, 0, 100);
+
+
+
     cout << "split: " << split << "%, size: " << size << " bytes, elements: " << elements << endl;
 
-    auto start = chrono::high_resolution_clock::now();
-    
-    auto arr = initializeVector(elements, size);
-    auto listSeq = initializeListSequential(elements, size);
-    auto listArb = initializeListArbitrary(elements, size);
-    auto end = chrono::high_resolution_clock::now();
-    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
-    cout << "Vector initialization took " << duration << " ms" << endl;
+    singleRun(split, size, elements);
     return EXIT_SUCCESS;
 }
 

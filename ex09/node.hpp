@@ -5,7 +5,7 @@
 class Node
 {
 public:
-    Node(int bytes) : data(bytes) {
+    Node(size_t bytes) : data(bytes) {
         // fil data with random chars
         std::random_device rd;
         std::mt19937 gen(rd());
