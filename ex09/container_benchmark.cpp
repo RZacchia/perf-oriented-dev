@@ -48,6 +48,7 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
     const chrono::seconds duration(10);
 
     // Welford online algorithm for stDev (ms), plus running median via two heaps.
+    // https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance
     long long n        = 0;
     double    mean_ms  = 0.0;
     double    M2_ms    = 0.0;
