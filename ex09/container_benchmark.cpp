@@ -7,7 +7,10 @@
 #include <chrono>
 #include <random>
 #include <algorithm>
+#include <cmath>
+#include <queue>
 #include "node.hpp"
+#include "container.hpp"
 
 using namespace std;
 
@@ -21,7 +24,7 @@ struct Metrics
 {
     string name;
     float stDev;
-    float mean;
+    float median;
 };
 
 forward_list<Node> initializeListSequential(int count, int size);
@@ -30,38 +33,77 @@ forward_list<Node> initializeListArbitrary(int count, int size);
 
 vector<Node> initializeVector(int count, int size);
 
-vector<chrono::milliseconds> singleRun(int split, int size, int elements)
+template<typename Container>
+Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Container>& container)
 {
-    auto arr = initializeVector(elements, size + 1);
-    auto listSeq = initializeListSequential(elements, size);
-    auto listArb = initializeListArbitrary(elements, size);
+    // modeChangeIndex: every N-th operation is an ins/del; 0 means never (100% read/write)
+    const int modeChangeIndex = (split >= 100)
+        ? 0
+        : static_cast<int>(100.0f / (100.0f - static_cast<float>(split)));
 
-    int modeChangeIndex = (int)(100.0f / (100.0f - (float)split));
-
-    bool isWrite = false;
+    int  counter  = 1;
+    bool isWrite  = false;
     bool isInsert = false;
 
+    const chrono::seconds duration(10);
 
-    for(int i = 1; i <= 100; i++){
+    // Welford online algorithm for stDev (ms), plus running median via two heaps.
+    long long n        = 0;
+    double    mean_ms  = 0.0;
+    double    M2_ms    = 0.0;
+    priority_queue<double> lower; // max-heap
+    priority_queue<double, vector<double>, greater<double>> upper; // min-heap
 
-        if(i % modeChangeIndex == 0){
-            isInsert ? cout << i << " Insert" << endl : cout << i << " Remove" << endl;
+    auto start = chrono::high_resolution_clock::now();
+    while (chrono::high_resolution_clock::now() - start < duration) {
+
+        auto op_start = chrono::high_resolution_clock::now();
+
+        if (modeChangeIndex > 0 && counter % modeChangeIndex == 0) {
+            isInsert ? container.insert(Node(size)) : container.erase();
             isInsert = !isInsert;
         } else {
-            isWrite ? cout << i << " Write" << endl : cout << i << " Read" << endl;
+            if (isWrite) container.write(Node(size));
+            else         (void)container.read(); // (void) prevents unused-value warning
             isWrite = !isWrite;
         }
+        container.advance();
 
+        double ms = chrono::duration<double, milli>(
+            chrono::high_resolution_clock::now() - op_start).count();
+
+        if (lower.empty() || ms <= lower.top()) {
+            lower.push(ms);
+        } else {
+            upper.push(ms);
+        }
+
+        if (lower.size() > upper.size() + 1) {
+            upper.push(lower.top());
+            lower.pop();
+        } else if (upper.size() > lower.size()) {
+            lower.push(upper.top());
+            upper.pop();
+        }
+
+        ++n;
+        double delta = ms - mean_ms;
+        mean_ms     += delta / static_cast<double>(n);
+        M2_ms       += delta * (ms - mean_ms); // uses updated mean (Welford)
+
+        ++counter;
     }
 
+    double variance = (n > 1) ? M2_ms / static_cast<double>(n - 1) : 0.0;
+    double median = 0.0;
+    if (!lower.empty() && lower.size() == upper.size()) {
+        median = (lower.top() + upper.top()) * 0.5;
+    } else if (!lower.empty()) {
+        median = lower.top();
+    }
 
-
-
-
-
+    return Metrics{ name, static_cast<float>(sqrt(variance)), static_cast<float>(median) };
 }
-
-
 
 int main(int argc, char **argv)
 {
@@ -88,11 +130,27 @@ int main(int argc, char **argv)
 
     split = clamp(split, 0, 100);
 
-
-
     cout << "split: " << split << "%, size: " << size << " bytes, elements: " << elements << endl;
 
-    singleRun(split, size, elements);
+    auto printMetrics = [](const Metrics& m) {
+        cout << m.name
+             << "  median=" << m.median << " ms"
+             << "  stDev=" << m.stDev << " ms\n";
+    };
+
+    {
+        ContainerWrapper<vector<Node>> w(initializeVector(elements, size));
+        printMetrics(singleRun("vector", split, size, w));
+    }
+    {
+        ContainerWrapper<forward_list<Node>> w(initializeListSequential(elements, size));
+        printMetrics(singleRun("forward_list_sequential", split, size, w));
+    }
+    {
+        ContainerWrapper<forward_list<Node>> w(initializeListArbitrary(elements, size));
+        printMetrics(singleRun("forward_list_arbitrary", split, size, w));
+    }
+
     return EXIT_SUCCESS;
 }
 
