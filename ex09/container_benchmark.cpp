@@ -7,6 +7,7 @@
 #include <chrono>
 #include <random>
 #include <algorithm>
+#include <numeric>
 #include <cmath>
 #include <queue>
 #include "node.hpp"
@@ -23,6 +24,7 @@ struct Metrics
     string name;
     float stDev;
     float median;
+    uint64_t operations;
 };
 
 forward_list<Node> initializeListSequential(int count, int size);
@@ -137,7 +139,12 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
         median = lower.top();
     }
 
-    return Metrics{ name, static_cast<float>(sqrt(variance)), static_cast<float>(median) };
+    return Metrics{
+        name,
+        static_cast<float>(sqrt(variance)),
+        static_cast<float>(median),
+        static_cast<uint64_t>(n)
+    };
 }
 
 int main(int argc, char **argv)
@@ -170,7 +177,8 @@ int main(int argc, char **argv)
     auto printMetrics = [](const Metrics& m) {
         cout << m.name
              << "  median=" << m.median << " ms"
-             << "  stDev=" << m.stDev << " ms\n";
+             << "  stDev=" << m.stDev << " ms"
+             << "  operations=" << m.operations << "\n";
     };
 
     {
@@ -194,38 +202,36 @@ int main(int argc, char **argv)
 
 forward_list<Node> initializeListSequential(int count, int size)
 {
-    forward_list<Node> list = {};
+    forward_list<Node> list;
+    auto tail = list.before_begin();
     for (int i = 0; i < count; ++i)
-    {
-        list.push_front(Node(size));
-    }
+        tail = list.insert_after(tail, Node(size));
     return list;
 }
 
 forward_list<Node> initializeListArbitrary(int count, int size)
 {
-    forward_list<Node> list = initializeListSequential(count, size);
-     using Iter = typename forward_list<Node>::iterator;
-    vector<Iter> nodes;
+    // Allocate one node per bucket, but in random temporal order.
+    // Then stitch buckets into one traversal list. This keeps node allocations
+    // intentionally de-correlated from traversal order.
+    vector<forward_list<Node>> buckets(static_cast<size_t>(count));
+    vector<int> order(static_cast<size_t>(count));
+    iota(order.begin(), order.end(), 0);
 
-    // 1. Collect iterators to every node in the list
-    for (auto it = list.begin(); it != list.end(); ++it)
-        nodes.push_back(it);
-
-    // 2. Randomly shuffle the iterator order
     random_device rd;
     mt19937 gen(rd());
-    shuffle(nodes.begin(), nodes.end(), gen);
+    shuffle(order.begin(), order.end(), gen);
 
-    // 3. Build a new list in shuffled order
-    forward_list<Node> shuffled;
-    auto before = shuffled.before_begin();
+    for (int idx : order)
+        buckets[static_cast<size_t>(idx)].push_front(Node(size));
 
-    for (auto it : nodes)
-        before = shuffled.insert_after(before, std::move(*it));
-
-    // 4. Replace the original list
-    list.swap(shuffled);
+    forward_list<Node> list;
+    auto tail = list.before_begin();
+    for (int i = 0; i < count; ++i)
+    {
+        list.splice_after(tail, buckets[static_cast<size_t>(i)]);
+        ++tail;
+    }
     return list;
 }
 
