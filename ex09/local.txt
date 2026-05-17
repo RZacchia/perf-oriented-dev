@@ -1,0 +1,200 @@
+split: 100%, size: 8 bytes, elements: 10
+vector  median=0.001703 ms  stDev=0.00158544 ms  operations=6188454
+forward_list_sequential  median=0.001703 ms  stDev=0.00154427 ms  operations=6200184
+forward_list_arbitrary  median=0.001703 ms  stDev=0.0015552 ms  operations=6198366
+sink=18395207476581626738
+split: 99%, size: 8 bytes, elements: 10
+vector  median=0.001703 ms  stDev=0.00153097 ms  operations=6087341
+forward_list_sequential  median=0.001703 ms  stDev=0.0015741 ms  operations=6101773
+forward_list_arbitrary  median=0.001703 ms  stDev=0.00155107 ms  operations=6100911
+sink=11608374923345307805
+split: 10%, size: 8 bytes, elements: 10
+vector  median=0.001704 ms  stDev=0.00154464 ms  operations=6187284
+forward_list_sequential  median=0.001703 ms  stDev=0.00153735 ms  operations=6199126
+forward_list_arbitrary  median=0.001703 ms  stDev=0.00153632 ms  operations=6199929
+sink=3921440182157973465
+split: 50%, size: 8 bytes, elements: 10
+vector  median=0.001703 ms  stDev=0.00157876 ms  operations=6095492
+forward_list_sequential  median=0.001703 ms  stDev=0.0015391 ms  operations=6100711
+forward_list_arbitrary  median=0.001703 ms  stDev=0.00159466 ms  operations=6113596
+sink=13016585182004628655
+split: 100%, size: 8 bytes, elements: 1000
+vector  median=0.001703 ms  stDev=0.00156142 ms  operations=6185660
+forward_list_sequential  median=0.001703 ms  stDev=0.00156031 ms  operations=6187132
+forward_list_arbitrary  median=0.001703 ms  stDev=0.00157336 ms  operations=6189420
+sink=779073939902363840
+split: 99%, size: 8 bytes, elements: 1000
+vector  median=0.001703 ms  stDev=0.00154225 ms  operations=6067880
+forward_list_sequential  median=0.001703 ms  stDev=0.00156191 ms  operations=6098911
+forward_list_arbitrary  median=0.001703 ms  stDev=0.0015641 ms  operations=6093937
+sink=4397955184114882497
+split: 10%, size: 8 bytes, elements: 1000
+vector  median=0.002305 ms  stDev=0.00157502 ms  operations=4731692
+forward_list_sequential  median=0.001703 ms  stDev=0.00154039 ms  operations=6190330
+forward_list_arbitrary  median=0.001703 ms  stDev=0.00156438 ms  operations=6168988
+sink=16908214582755823719
+split: 50%, size: 8 bytes, elements: 1000
+vector  median=0.001773 ms  stDev=0.00158803 ms  operations=5257048
+forward_list_sequential  median=0.001713 ms  stDev=0.00154112 ms  operations=6073728
+forward_list_arbitrary  median=0.001713 ms  stDev=0.00155922 ms  operations=6056600
+sink=4609224808678639361
+split: 100%, size: 8 bytes, elements: 100000
+vector  median=0.001713 ms  stDev=0.00157415 ms  operations=6147126
+forward_list_sequential  median=0.001713 ms  stDev=0.00156153 ms  operations=6156214
+forward_list_arbitrary  median=0.001784 ms  stDev=0.00157621 ms  operations=5886420
+sink=14343485661781547948
+split: 99%, size: 8 bytes, elements: 100000
+vector  median=0.002996 ms  stDev=0.00624928 ms  operations=4594026
+forward_list_sequential  median=0.001703 ms  stDev=0.00157454 ms  operations=6062404
+forward_list_arbitrary  median=0.001784 ms  stDev=0.0015522 ms  operations=5776911
+sink=7529130041532517965
+split: 10%, size: 8 bytes, elements: 100000
+vector  median=0.066748 ms  stDev=0.0227933 ms  operations=148926
+forward_list_sequential  median=0.001703 ms  stDev=0.00155501 ms  operations=6166140
+forward_list_arbitrary  median=0.001723 ms  stDev=0.00154686 ms  operations=6004272
+sink=3405602772535169482
+split: 50%, size: 8 bytes, elements: 100000
+vector  median=0.003366 ms  stDev=0.0355249 ms  operations=331239
+forward_list_sequential  median=0.001703 ms  stDev=0.00153551 ms  operations=6086804
+forward_list_arbitrary  median=0.001734 ms  stDev=0.00156416 ms  operations=5910216
+sink=16363096461363863998
+split: 100%, size: 8 bytes, elements: 10000000
+vector  median=0.001703 ms  stDev=0.00154171 ms  operations=6181274
+forward_list_sequential  median=0.001703 ms  stDev=0.00154982 ms  operations=6176511
+forward_list_arbitrary  median=0.001823 ms  stDev=0.00156441 ms  operations=5855038
+sink=3480887833711654622
+split: 99%, size: 8 bytes, elements: 10000000
+vector  median=0.002995 ms  stDev=1.87426 ms  operations=52700
+forward_list_sequential  median=0.001703 ms  stDev=0.00154468 ms  operations=6086410
+forward_list_arbitrary  median=0.001804 ms  stDev=0.00153864 ms  operations=5811088
+sink=17220367480740280293
+split: 10%, size: 8 bytes, elements: 10000000
+vector  median=18.0585 ms  stDev=0.357338 ms  operations=551
+forward_list_sequential  median=0.001703 ms  stDev=0.00153503 ms  operations=6182836
+forward_list_arbitrary  median=0.001733 ms  stDev=0.00149919 ms  operations=5994282
+sink=12891335634285651830
+split: 50%, size: 8 bytes, elements: 10000000
+vector  median=8.86206 ms  stDev=9.08361 ms  operations=1102
+forward_list_sequential  median=0.001703 ms  stDev=0.00153237 ms  operations=6102068
+forward_list_arbitrary  median=0.001744 ms  stDev=0.00151189 ms  operations=5863528
+sink=16023118729747781305
+split: 100%, size: 512 bytes, elements: 10
+vector  median=0.0034065 ms  stDev=0.00240209 ms  operations=4044510
+forward_list_sequential  median=0.003406 ms  stDev=0.00240306 ms  operations=4048142
+forward_list_arbitrary  median=0.0033965 ms  stDev=0.00240193 ms  operations=4048544
+sink=13596676534084055689
+split: 99%, size: 512 bytes, elements: 10
+vector  median=0.003406 ms  stDev=0.00241696 ms  operations=4002250
+forward_list_sequential  median=0.003406 ms  stDev=0.00239958 ms  operations=4001703
+forward_list_arbitrary  median=0.003406 ms  stDev=0.00241208 ms  operations=4004709
+sink=6422210440071941313
+split: 10%, size: 512 bytes, elements: 10
+vector  median=0.003406 ms  stDev=0.00242181 ms  operations=4046130
+forward_list_sequential  median=0.003406 ms  stDev=0.00239105 ms  operations=4048720
+forward_list_arbitrary  median=0.003406 ms  stDev=0.0023903 ms  operations=4048872
+sink=10748800439056068652
+split: 50%, size: 512 bytes, elements: 10
+vector  median=0.003416 ms  stDev=0.00243897 ms  operations=4002360
+forward_list_sequential  median=0.003406 ms  stDev=0.00239412 ms  operations=4008474
+forward_list_arbitrary  median=0.003406 ms  stDev=0.00239673 ms  operations=4006043
+sink=578516600692974361
+split: 100%, size: 512 bytes, elements: 1000
+vector  median=0.003416 ms  stDev=0.00243779 ms  operations=4039878
+forward_list_sequential  median=0.003406 ms  stDev=0.00245276 ms  operations=4044218
+forward_list_arbitrary  median=0.003416 ms  stDev=0.00239264 ms  operations=4043626
+sink=15309330070778903592
+split: 99%, size: 512 bytes, elements: 1000
+vector  median=0.003416 ms  stDev=0.0023982 ms  operations=3989949
+forward_list_sequential  median=0.003416 ms  stDev=0.00240062 ms  operations=4000602
+forward_list_arbitrary  median=0.003416 ms  stDev=0.00240058 ms  operations=3997888
+sink=9946518986205045042
+split: 10%, size: 512 bytes, elements: 1000
+vector  median=0.003657 ms  stDev=0.00246365 ms  operations=3388268
+forward_list_sequential  median=0.003156 ms  stDev=0.00239491 ms  operations=4044877
+forward_list_arbitrary  median=0.003406 ms  stDev=0.00240352 ms  operations=4039216
+sink=12710444727738951550
+split: 50%, size: 512 bytes, elements: 1000
+vector  median=0.003476 ms  stDev=0.00245115 ms  operations=3646220
+forward_list_sequential  median=0.003406 ms  stDev=0.00239453 ms  operations=4004332
+forward_list_arbitrary  median=0.003407 ms  stDev=0.00243999 ms  operations=3994900
+sink=5272247512919452705
+split: 100%, size: 512 bytes, elements: 100000
+vector  median=0.003477 ms  stDev=0.00241305 ms  operations=3897510
+forward_list_sequential  median=0.0034615 ms  stDev=0.00245138 ms  operations=3964550
+forward_list_arbitrary  median=0.003566 ms  stDev=0.00243376 ms  operations=3793788
+sink=11894154924414598595
+split: 99%, size: 512 bytes, elements: 100000
+vector  median=0.004729 ms  stDev=0.00647716 ms  operations=3241654
+forward_list_sequential  median=0.003467 ms  stDev=0.0025006 ms  operations=3894937
+forward_list_arbitrary  median=0.003607 ms  stDev=0.00246369 ms  operations=3717895
+sink=10945271650116517475
+split: 10%, size: 512 bytes, elements: 100000
+vector  median=0.069024 ms  stDev=0.0221897 ms  operations=144107
+forward_list_sequential  median=0.003407 ms  stDev=0.00245995 ms  operations=3981368
+forward_list_arbitrary  median=0.003486 ms  stDev=0.00235741 ms  operations=3851108
+sink=11330532598098210083
+split: 50%, size: 512 bytes, elements: 100000
+vector  median=0.00525 ms  stDev=0.0356867 ms  operations=321992
+forward_list_sequential  median=0.003417 ms  stDev=0.00245659 ms  operations=3925171
+forward_list_arbitrary  median=0.003486 ms  stDev=0.00243561 ms  operations=3815891
+sink=13443690292113878674
+split: 100%, size: 512 bytes, elements: 10000000
+vector  median=0.003487 ms  stDev=0.0024266 ms  operations=3879908
+forward_list_sequential  median=0.0034565 ms  stDev=0.00252334 ms  operations=3969058
+forward_list_arbitrary  median=0.003677 ms  stDev=0.00244923 ms  operations=3664260
+sink=18421697440972087421
+split: 99%, size: 512 bytes, elements: 10000000
+vector  median=0.004769 ms  stDev=1.77168 ms  operations=55400
+forward_list_sequential  median=0.003476 ms  stDev=0.00247788 ms  operations=3925254
+forward_list_arbitrary  median=0.003697 ms  stDev=0.00245769 ms  operations=3605086
+sink=13175560787326954214
+split: 10%, size: 512 bytes, elements: 10000000
+vector  median=17.9291 ms  stDev=0.558563 ms  operations=552
+forward_list_sequential  median=0.003406 ms  stDev=0.00245877 ms  operations=3988488
+forward_list_arbitrary  median=0.003497 ms  stDev=0.00233468 ms  operations=3810222
+sink=8494360700845533730
+split: 50%, size: 512 bytes, elements: 10000000
+vector  median=8.77878 ms  stDev=9.24785 ms  operations=1084
+forward_list_sequential  median=0.003417 ms  stDev=0.00241821 ms  operations=3919403
+forward_list_arbitrary  median=0.003527 ms  stDev=0.00237537 ms  operations=3689897
+sink=8454913797455799635
+split: 100%, size: 8388608 bytes, elements: 10
+vector  median=16.3598 ms  stDev=16.4412 ms  operations=610
+forward_list_sequential  median=16.362 ms  stDev=16.4038 ms  operations=612
+forward_list_arbitrary  median=16.3611 ms  stDev=16.4027 ms  operations=612
+sink=9426262857406819974
+split: 99%, size: 8388608 bytes, elements: 10
+vector  median=16.3817 ms  stDev=16.5238 ms  operations=608
+forward_list_sequential  median=16.3806 ms  stDev=16.4881 ms  operations=608
+forward_list_arbitrary  median=16.3819 ms  stDev=16.4645 ms  operations=608
+sink=5932159773704721023
+split: 10%, size: 8388608 bytes, elements: 10
+vector  median=16.6633 ms  stDev=16.5428 ms  operations=606
+forward_list_sequential  median=16.3786 ms  stDev=16.4767 ms  operations=608
+forward_list_arbitrary  median=16.3775 ms  stDev=16.451 ms  operations=610
+sink=974708194960650813
+split: 50%, size: 8388608 bytes, elements: 10
+vector  median=16.6573 ms  stDev=16.4795 ms  operations=608
+forward_list_sequential  median=0.001272 ms  stDev=16.4179 ms  operations=611
+forward_list_arbitrary  median=0.001213 ms  stDev=16.4602 ms  operations=611
+sink=12720220218157569764
+split: 100%, size: 8388608 bytes, elements: 1000
+vector  median=18.0879 ms  stDev=18.1787 ms  operations=552
+forward_list_sequential  median=16.3651 ms  stDev=16.669 ms  operations=602
+forward_list_arbitrary  median=16.3646 ms  stDev=16.4693 ms  operations=610
+sink=10923059823107610403
+split: 99%, size: 8388608 bytes, elements: 1000
+vector  median=0.609751 ms  stDev=18.2214 ms  operations=551
+forward_list_sequential  median=16.3728 ms  stDev=16.4902 ms  operations=608
+forward_list_arbitrary  median=16.3664 ms  stDev=16.5091 ms  operations=608
+sink=17548434113684193467
+split: 10%, size: 8388608 bytes, elements: 1000
+vector  median=18.216 ms  stDev=17.75 ms  operations=550
+forward_list_sequential  median=16.3685 ms  stDev=16.4468 ms  operations=610
+forward_list_arbitrary  median=16.3677 ms  stDev=16.5626 ms  operations=606
+sink=14019665798033892594
+split: 50%, size: 8388608 bytes, elements: 1000
+vector  median=0.665759 ms  stDev=18.1452 ms  operations=547
+forward_list_sequential  median=16.3658 ms  stDev=16.4895 ms  operations=608
+forward_list_arbitrary  median=16.3638 ms  stDev=16.8613 ms  operations=596
+sink=14403665506644620574
