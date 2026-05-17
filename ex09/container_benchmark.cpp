@@ -14,6 +14,10 @@
 
 using namespace std;
 
+// Global volatile sink: writing here creates an observable side effect so
+// the optimizer cannot discard benchmarked memory accesses as dead code.
+static volatile uint64_t g_benchmark_sink = 0;
+
 enum class ContainerType{
     Vector,
     ForwardList
@@ -34,6 +38,23 @@ forward_list<Node> initializeListArbitrary(int count, int size);
 vector<Node> initializeVector(int count, int size);
 
 template<typename Container>
+uint64_t checksumContainer(const Container& c)
+{
+    uint64_t acc = 1469598103934665603ULL;
+    for (const auto& node : c)
+    {
+        acc ^= static_cast<uint64_t>(node.data.size());
+        acc *= 1099511628211ULL;
+        if (!node.data.empty())
+        {
+            acc ^= static_cast<unsigned char>(node.data[0]);
+            acc *= 1099511628211ULL;
+        }
+    }
+    return acc;
+}
+
+template<typename Container>
 Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Container>& container)
 {
     // modeChangeIndex: every N-th operation is an ins/del; 0 means never (100% read/write)
@@ -52,6 +73,7 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
     long long n        = 0;
     double    mean_ms  = 0.0;
     double    M2_ms    = 0.0;
+    uint64_t  read_acc = 0;
     priority_queue<double> lower; // max-heap
     priority_queue<double, vector<double>, greater<double>> upper; // min-heap
 
@@ -61,14 +83,24 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
         auto op_start = chrono::high_resolution_clock::now();
 
         if (modeChangeIndex > 0 && counter % modeChangeIndex == 0) {
-            isInsert ? container.insert(Node(size)) : container.erase();
+            if(isInsert){
+                container.insert(Node(size));
+                container.advance();
+            } else {
+                container.erase();
+            }
             isInsert = !isInsert;
         } else {
             if (isWrite) container.write(Node(size));
-            else         (void)container.read(); // (void) prevents unused-value warning
+            else {
+                const auto& node = container.read();
+                read_acc ^= static_cast<uint64_t>(node.data.size());
+                if (!node.data.empty())
+                    read_acc ^= static_cast<unsigned char>(node.data[0]);
+            }
+            container.advance();
             isWrite = !isWrite;
         }
-        container.advance();
 
         double ms = chrono::duration<double, milli>(
             chrono::high_resolution_clock::now() - op_start).count();
@@ -94,6 +126,14 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
 
         ++counter;
     }
+
+    // Consume container state after timed section to prevent dead-code removal
+    // while keeping the benchmark loop itself unchanged.
+    uint64_t post = checksumContainer(container.c)
+        ^ static_cast<uint64_t>(counter)
+        ^ static_cast<uint64_t>(n)
+        ^ read_acc;
+    g_benchmark_sink ^= post;
 
     double variance = (n > 1) ? M2_ms / static_cast<double>(n - 1) : 0.0;
     double median = 0.0;
@@ -151,6 +191,8 @@ int main(int argc, char **argv)
         ContainerWrapper<forward_list<Node>> w(initializeListArbitrary(elements, size));
         printMetrics(singleRun("forward_list_arbitrary", split, size, w));
     }
+
+    cout << "sink=" << g_benchmark_sink << '\n';
 
     return EXIT_SUCCESS;
 }

@@ -41,6 +41,7 @@ public:
 
 private:
     iterator  cur;
+    size_t    idx = 0;
     // prev is only meaningful for forward_list:
     //   it always points to the node *before* cur so that
     //   insert_after(prev) / erase_after(prev) operate at cur.
@@ -62,7 +63,7 @@ public:
             c.reserve(n + 2); // +2 headroom for benchmark insertions
             for (size_t i = 0; i < n; ++i)
                 c.push_back(factory());
-            cur = c.begin();
+            idx = 0;
         }
         sz = n;
     }
@@ -78,7 +79,7 @@ public:
             cur  = c.begin();
         } else {
             sz  = c.size();
-            cur = c.begin();
+            idx = 0;
         }
     }
 
@@ -86,14 +87,22 @@ public:
     // read – return const ref to the current element (no cursor movement)
     // ------------------------------------------------------------------
     const value_type& read() const {
-        return *cur;
+        if constexpr (flist) {
+            return *cur;
+        } else {
+            return c[idx];
+        }
     }
 
     // ------------------------------------------------------------------
     // write – overwrite the current element (no cursor movement)
     // ------------------------------------------------------------------
     void write(value_type val) {
-        *cur = std::move(val);
+        if constexpr (flist) {
+            *cur = std::move(val);
+        } else {
+            c[idx] = std::move(val);
+        }
     }
 
     // ------------------------------------------------------------------
@@ -108,7 +117,7 @@ public:
         if constexpr (flist) {
             cur = c.insert_after(prev, std::move(val));
         } else {
-            cur = c.insert(cur, std::move(val));
+            c.insert(c.begin() + static_cast<typename Container::difference_type>(idx), std::move(val));
         }
         ++sz;
     }
@@ -125,9 +134,9 @@ public:
                 cur  = c.begin();
             }
         } else {
-            cur = c.erase(cur);
-            if (cur == c.end())
-                cur = c.begin();
+            c.erase(c.begin() + static_cast<typename Container::difference_type>(idx));
+            if (idx >= sz - 1)
+                idx = 0;
         }
         --sz;
     }
@@ -144,9 +153,7 @@ public:
                 cur  = c.begin();
             }
         } else {
-            ++cur;
-            if (cur == c.end())
-                cur = c.begin();
+            idx = (idx + 1) % sz;
         }
     }
 
