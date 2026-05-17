@@ -18,12 +18,6 @@ using namespace std;
 // the optimizer cannot discard benchmarked memory accesses as dead code.
 static volatile uint64_t g_benchmark_sink = 0;
 
-enum class ContainerType{
-    Vector,
-    ForwardList
-};
-
-
 struct Metrics
 {
     string name;
