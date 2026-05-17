@@ -12,6 +12,9 @@ endif()
 
 add_executable(container_benchmark
   container_benchmark.cpp
+  container.cpp
+  container.hpp
+  node.hpp
 )
 
 target_compile_options(container_benchmark PRIVATE
