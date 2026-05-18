@@ -78,7 +78,7 @@ Metrics singleRun(const string& name, int split, int size, ContainerWrapper<Cont
 
         auto op_start = chrono::high_resolution_clock::now();
 
-        if (modeChangeIndex > 0 && counter % modeChangeIndex == 0) {
+        if ((modeChangeIndex > 0 && counter % modeChangeIndex == 0) || modeChangeIndex == 0) {
             if(isInsert){
                 container.insert(Node(size));
                 container.advance();

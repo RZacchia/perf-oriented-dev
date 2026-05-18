@@ -12,8 +12,7 @@ module load gcc/12.2.0-gcc-8.5.0-p4pe45v
 
 
 
-g++ -std=c++17 -Wall -Wextra -O2 -o container_benchmark container_benchmark.cpp container.cpp
-
+make
 
 ./container_benchmark 100 8 10 > lcc3_${SLURM_JOB_ID}.log
 ./container_benchmark 99 8 10 >> lcc3_${SLURM_JOB_ID}.log
@@ -67,3 +66,5 @@ g++ -std=c++17 -Wall -Wextra -O2 -o container_benchmark container_benchmark.cpp 
 ./container_benchmark 99 8388608 1000 >> lcc3_${SLURM_JOB_ID}.log
 ./container_benchmark 10 8388608 1000 >> lcc3_${SLURM_JOB_ID}.log
 ./container_benchmark 50 8388608 1000 >> lcc3_${SLURM_JOB_ID}.log
+
+make clean
