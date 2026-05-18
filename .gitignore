@@ -15,3 +15,4 @@ tools/build_release
 */CmakeCache.txt
 *.log
 *.out.*
+*/build/
