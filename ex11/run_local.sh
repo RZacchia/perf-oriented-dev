@@ -10,7 +10,7 @@ ninja
 run_timed () {
   # $1 = name, rest = command...
   local name="$1"; shift
-  timed-run -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
+  /bin/usr/time -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
 }
 
 
