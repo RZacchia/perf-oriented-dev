@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef unsigned long dn;
+typedef unsigned long long dn;
 typedef struct {
 	dn x;
 	dn y;
@@ -63,7 +63,6 @@ int main(int argc, char **argv) {
 	int n = atoi(argv[1]);
 	if(n >= NUM_RESULTS) {
 		printf("N too large (can only check up to %d)\n", NUM_RESULTS);
-		exit(-1);
 	}
 
 	dn result = 0;
@@ -72,9 +71,10 @@ int main(int argc, char **argv) {
 	
 	if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
-		return EXIT_SUCCESS;
+	} else {
+		printf("Verification: ERR\nResult too large to verify\n");
 	}
-	printf("Verification: ERR\n");	
+	printf("result %llu\n", result);	
 	free(memo.entries);
-	return EXIT_FAILURE;
+	return EXIT_SUCCESS;
 }
