@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=lva
-#SBATCH --job-name ex01
+#SBATCH --job-name ex11
 #SBATCH --output=%j_job_output.log
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
@@ -15,32 +15,46 @@ module load python/3.10.8-gcc-8.5.0-r5lf3ij # a newer version of python
 
 echo ========== Starting building ================
 
-mkdir -p ~/perf-oriented-dev/small_samples/build
-cd ~/perf-oriented-dev/small_samples/build
+mkdir -p ~/perf-oriented-dev/ex11/build
+cd ~/perf-oriented-dev/ex11/build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
 
 LOG="../../${SLURM_JOB_ID}.log"
 
+
 run_timed () {
   # $1 = name, rest = command...
   local name="$1"; shift
-  /bin/time -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
+  /usr/bin/time -o "$LOG" -a -f "${name},%e,%U,%S,%P,%M" "$@"
 }
 
 
 
 
 echo ========== Starting running ================
-for i in {1..15}
-    do
-    echo "========== Run $i / 15 =========="
-    run_timed delannoy ./delannoy 13    
-    run_timed delannoy_memoized ./delannoy_memoized 13
-    run_timed delannoy_tabulated ./delannoy_tabulated 13
-    done
+for j in {1..10}
+  do
+      echo "========== Run $j / 10 =========="
 
-python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../results_O3.csv
+  for i in {0..13}
+    do
+    echo "========== n $i =========="
+    run_timed delannoy ./delannoy $i
+    run_timed delannoy_memoized ./delannoy_memoized $i
+    run_timed delannoy_tabulated ./delannoy_tabulated $i
+  done
+    
+
+  for i in {13..30}
+    do
+    echo "========== n $i =========="
+    run_timed delannoy_memoized ./delannoy_memoized $i
+    run_timed delannoy_tabulated ./delannoy_tabulated $i
+  done
+done
+
+# python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../results_O3.csv
 
 echo ========= Starting cleaning ================
-rm -rf ~/perf-oriented-dev/small_samples/build
+# rm -rf ~/perf-oriented-dev/small_samples/build

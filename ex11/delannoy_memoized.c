@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 typedef unsigned long dn;
 
@@ -82,16 +83,25 @@ int main(int argc, char **argv) {
 	int n = atoi(argv[1]);
 	if(n >= NUM_RESULTS) {
 		printf("N too large (can only check up to %d)\n", NUM_RESULTS);
-		exit(-1);
 	}
 
 	dn result = 0;
+	struct timespec t0, t1;
+	clock_gettime(CLOCK_MONOTONIC, &t0);
 	result = delannoy(n, n);
+	clock_gettime(CLOCK_MONOTONIC, &t1);
+
+	unsigned long long elapsed_ns =
+		(unsigned long long)(t1.tv_sec - t0.tv_sec) * 1000000000ull +
+		(unsigned long long)(t1.tv_nsec - t0.tv_nsec);
 	
-	if(result == DELANNOY_RESULTS[n]) {
+		if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
-		return EXIT_SUCCESS;
+	} else {
+		printf("Verification: ERR\n");
 	}
-	printf("Verification: ERR\n");	
+	printf("result %lu\n", result);	
+	printf("time: %.3f us\n",
+		(double)elapsed_ns / 1e3);
 	return EXIT_FAILURE;
 }

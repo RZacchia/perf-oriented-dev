@@ -1,0 +1,1100 @@
+delannoy,0.00,0.00,0.00,50%,1392
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1432
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+delannoy,0.00,0.00,0.00,0%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1556
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+delannoy,0.00,0.00,0.00,0%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1568
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,0.00,0.00,0.00,0%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1636
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1512
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,0.00,0.00,0.00,0%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1556
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,50%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1672
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.00,0.00,0.00,50%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1636
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,33%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1784
+delannoy_tabulated,0.00,0.00,0.00,0%,1440
+delannoy,0.00,0.00,0.00,75%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1816
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+delannoy,0.02,0.02,0.00,89%,1476
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1872
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+delannoy,0.14,0.14,0.00,97%,1292
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1996
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,0.62,0.62,0.00,99%,1376
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1868
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,3.25,3.24,0.00,99%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1960
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2052
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2176
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2180
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2120
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2356
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2356
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2468
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2508
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2440
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2696
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2636
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2724
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2632
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2772
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2680
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,25%,2816
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2876
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2924
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,0%,1332
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1568
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1576
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+delannoy,0.00,0.00,0.00,0%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1556
+delannoy_tabulated,0.00,0.00,0.00,0%,1440
+delannoy,0.00,0.00,0.00,0%,1360
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1588
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,0%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1616
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+delannoy,0.00,0.00,0.00,0%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1696
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+delannoy,0.00,0.00,0.00,0%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1600
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+delannoy,0.00,0.00,0.00,50%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1744
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.00,0.00,0.00,0%,1392
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,100%,1780
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,0.00,0.00,0.00,75%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1804
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.02,0.02,0.00,89%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1876
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.14,0.14,0.00,97%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1968
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.62,0.62,0.00,99%,1376
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1964
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,3.24,3.23,0.00,99%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2080
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2064
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2088
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2216
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2112
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2312
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2352
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2308
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2496
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2564
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2512
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2640
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2756
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2740
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2764
+delannoy_tabulated,0.00,0.00,0.00,0%,1600
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2876
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2700
+delannoy_tabulated,0.00,0.00,0.00,0%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2896
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2788
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,0%,1336
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1552
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1448
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,0%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1556
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,0%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1592
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,0.00,0.00,0.00,0%,1392
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1496
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1532
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+delannoy,0.00,0.00,0.00,0%,1356
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1744
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+delannoy,0.00,0.00,0.00,50%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1708
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.00,0.00,0.00,33%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1752
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,75%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1800
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.02,0.02,0.00,88%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1848
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.14,0.14,0.00,97%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1948
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.63,0.62,0.00,99%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1988
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,3.24,3.23,0.00,99%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2056
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1952
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2108
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2068
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2304
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2196
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2248
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2420
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2396
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2464
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2592
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2632
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2620
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2764
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2748
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2792
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2808
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2884
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,66%,2896
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,0%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1540
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.00,0.00,0.00,0%,1412
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1564
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1460
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.00,0.00,0.00,0%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1608
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.00,0.00,0.00,0%,1476
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1632
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+delannoy,0.00,0.00,0.00,0%,1356
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1548
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.00,0.00,0.00,50%,1412
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1744
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,50%,1292
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1632
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+delannoy,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1772
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,60%,1356
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1860
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.02,0.02,0.00,92%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1852
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.14,0.14,0.00,97%,1412
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1944
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,0.63,0.62,0.00,99%,1292
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2056
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,3.25,3.24,0.00,99%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1948
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2080
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2000
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2164
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2120
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2320
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2352
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2320
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2492
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2564
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2608
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2652
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2692
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2640
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2772
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2692
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2804
+delannoy_tabulated,0.00,0.00,0.00,0%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2780
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2956
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1392
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1448
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+delannoy,0.00,0.00,0.00,0%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1444
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,0%,1332
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1568
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,0%,1476
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1480
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1660
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,0%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1640
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+delannoy,0.00,0.00,0.00,50%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1688
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.00,0.00,0.00,50%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1804
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,0.00,0.00,0.00,33%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1756
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,60%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1824
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.02,0.02,0.00,89%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1852
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.14,0.14,0.00,97%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1956
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.62,0.62,0.00,99%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1964
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,3.24,3.24,0.00,99%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2060
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2136
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2100
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2180
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2224
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2388
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2240
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2404
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2392
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2604
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2520
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2688
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2708
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2788
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2788
+delannoy_tabulated,0.00,0.00,0.00,0%,1600
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2692
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2808
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2772
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2884
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,0%,1392
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1448
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,0%,1360
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1552
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.00,0.00,0.00,0%,1412
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1476
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.00,0.00,0.00,0%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1576
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,0%,1356
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1632
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,0%,1412
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1660
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+delannoy,0.00,0.00,0.00,50%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1576
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,50%,1416
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,100%,1620
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.00,0.00,0.00,33%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1776
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,75%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1724
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.02,0.02,0.00,92%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1868
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+delannoy,0.14,0.14,0.00,97%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1948
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+delannoy,0.63,0.62,0.00,99%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1980
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,3.24,3.22,0.00,99%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2076
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2060
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2080
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2060
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2220
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2304
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2356
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2304
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2496
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2636
+delannoy_tabulated,0.00,0.00,0.00,0%,1600
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2604
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2724
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2608
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2652
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,25%,2844
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2792
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2700
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2760
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2896
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1600
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,0%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1564
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,0%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1580
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,0%,1476
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1484
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+delannoy,0.00,0.00,0.00,0%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1692
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.00,0.00,0.00,0%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1700
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+delannoy,0.00,0.00,0.00,50%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1688
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,50%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1736
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,50%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1664
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+delannoy,0.00,0.00,0.00,75%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1820
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.02,0.02,0.00,92%,1472
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1860
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.14,0.14,0.00,98%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1944
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.63,0.62,0.00,99%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2020
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,3.23,3.22,0.00,99%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1948
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2140
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2112
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2216
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2236
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2192
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2344
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2316
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2396
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2456
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2604
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2688
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2608
+delannoy_tabulated,0.00,0.00,0.00,0%,1600
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2756
+delannoy_tabulated,0.00,0.00,0.00,0%,1460
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2752
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2788
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2812
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2776
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2900
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.00,0.00,0.00,0%,1356
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1448
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.00,0.00,0.00,0%,1292
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1600
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.00,0.00,0.00,0%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1472
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,50%,1416
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1576
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,0.00,0.00,0.00,0%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1604
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+delannoy,0.00,0.00,0.00,0%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1656
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+delannoy,0.00,0.00,0.00,0%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1692
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,50%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1616
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.00,0.00,0.00,33%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1776
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.00,0.00,0.00,75%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1804
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+delannoy,0.02,0.02,0.00,96%,1332
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1952
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,0.14,0.14,0.00,97%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1832
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.62,0.62,0.00,99%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1868
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,3.24,3.23,0.00,99%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1956
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1948
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2096
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2168
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2216
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2304
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2348
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2428
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2480
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2556
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2696
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2656
+delannoy_tabulated,0.00,0.00,0.00,0%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2704
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2648
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2784
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2808
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2800
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2784
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2892
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1440
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+delannoy,0.00,0.00,0.00,0%,1368
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1444
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+delannoy,0.00,0.00,0.00,0%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1460
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+delannoy,0.00,0.00,0.00,0%,1416
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1584
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.00,0.00,0.00,0%,1360
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1636
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+delannoy,0.00,0.00,0.00,0%,1476
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1652
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+delannoy,0.00,0.00,0.00,0%,1332
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,100%,1588
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.00,0.00,0.00,50%,1372
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1776
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.00,0.00,0.00,0%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1648
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+delannoy,0.00,0.00,0.00,40%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1800
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.02,0.02,0.00,88%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1884
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+delannoy,0.14,0.14,0.00,98%,1388
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1856
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.62,0.62,0.00,99%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1872
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+delannoy,3.23,3.22,0.00,99%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1956
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2036
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2088
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2188
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2232
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2208
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2240
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2304
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2500
+delannoy_tabulated,0.00,0.00,0.00,0%,1436
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2464
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2512
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2652
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2688
+delannoy_tabulated,0.00,0.00,0.00,0%,1532
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2792
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2764
+delannoy_tabulated,0.00,0.00,0.00,0%,1572
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2704
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2788
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2888
+delannoy_tabulated,0.00,0.00,0.00,0%,1540
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2812
+delannoy_tabulated,0.00,0.00,0.00,0%,1560
+delannoy,0.00,0.00,0.00,0%,1376
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1536
+delannoy_tabulated,0.00,0.00,0.00,0%,1528
+delannoy,0.00,0.00,0.00,0%,1360
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1532
+delannoy_tabulated,0.00,0.00,0.00,0%,1600
+delannoy,0.00,0.00,0.00,0%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1456
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,0%,1416
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1632
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+delannoy,0.00,0.00,0.00,0%,1384
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1660
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+delannoy,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1664
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,0%,1380
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1692
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.00,0.00,0.00,50%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,1728
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.00,0.00,0.00,0%,1364
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1788
+delannoy_tabulated,0.00,0.00,0.00,0%,1432
+delannoy,0.00,0.00,0.00,75%,1440
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,100%,1804
+delannoy_tabulated,0.00,0.00,0.00,0%,1564
+delannoy,0.02,0.02,0.00,92%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1856
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+delannoy,0.14,0.14,0.00,97%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2028
+delannoy_tabulated,0.00,0.00,0.00,0%,1628
+delannoy,0.62,0.62,0.00,99%,1404
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,1872
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+delannoy,3.24,3.23,0.00,99%,1288
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,0%,2036
+delannoy_tabulated,0.00,0.00,0.00,0%,1596
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2048
+delannoy_tabulated,0.00,0.00,0.00,0%,1548
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,50%,2000
+delannoy_tabulated,0.00,0.00,0.00,0%,1632
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2248
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2236
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2308
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2340
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2412
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2400
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2460
+delannoy_tabulated,0.00,0.00,0.00,0%,1456
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2508
+delannoy_tabulated,0.00,0.00,0.00,0%,1536
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2660
+delannoy_tabulated,0.00,0.00,0.00,0%,1568
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2596
+delannoy_tabulated,0.00,0.00,0.00,0%,1452
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2824
+delannoy_tabulated,0.00,0.00,0.00,0%,1448
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2756
+delannoy_tabulated,0.00,0.00,0.00,0%,1552
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2696
+delannoy_tabulated,0.00,0.00,0.00,0%,1556
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2828
+delannoy_tabulated,0.00,0.00,0.00,0%,1544
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2868
+delannoy_tabulated,0.00,0.00,0.00,0%,1444
+Command exited with non-zero status 1
+delannoy_memoized,0.00,0.00,0.00,33%,2900
+delannoy_tabulated,0.00,0.00,0.00,0%,1432

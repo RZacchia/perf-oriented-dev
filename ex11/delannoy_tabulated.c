@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+
 
 typedef unsigned long dn;
 
@@ -49,13 +51,23 @@ int main(int argc, char **argv) {
 	}
 
 	dn result = 0;
+	struct timespec t0, t1;
+	clock_gettime(CLOCK_MONOTONIC, &t0);
 	result = delannoy(n, n);
-	
+	clock_gettime(CLOCK_MONOTONIC, &t1);	
 	if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
 	} else {
 		printf("Verification: ERR\n");
 	}
 	printf("result %lu\n", result);	
+	unsigned long long elapsed_ns =
+		(unsigned long long)(t1.tv_sec - t0.tv_sec) * 1000000000ull +
+		(unsigned long long)(t1.tv_nsec - t0.tv_nsec);
+	printf("time: %llu ns (%.3f us, %.3f ms, %.6f s)\n",
+		elapsed_ns,
+		(double)elapsed_ns / 1e3,
+		(double)elapsed_ns / 1e6,
+		(double)elapsed_ns / 1e9);
 	return EXIT_SUCCESS;
 }
