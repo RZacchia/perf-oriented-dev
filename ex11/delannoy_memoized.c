@@ -2,48 +2,67 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef unsigned long long dn;
+typedef unsigned long dn;
+
+#define MEMO_SIZE (1u << 16)
+
 typedef struct {
 	dn x;
 	dn y;
-} pair;
-
-typedef struct {
-	pair p;
-	dn result;
+	dn value;
+	int used;
 } memo_entry;
 
-typedef struct {
-	memo_entry *entries;
-	size_t size;
-	size_t capacity;
-} memo_table;
+static memo_entry memo[MEMO_SIZE];
 
-dn delannoy(dn x, dn y, memo_table *memo) {
+static size_t memo_hash(dn x, dn y) {
+	unsigned long long hx = (unsigned long long)x * 11400714819323198485ull;
+	unsigned long long hy = (unsigned long long)y * 14029467366897019727ull;
+	return (size_t)((hx ^ hy) & (MEMO_SIZE - 1));
+}
+
+static int memo_get(dn x, dn y, dn *value) {
+	size_t idx = memo_hash(x, y);
+
+	for(size_t i = 0; i < MEMO_SIZE; i++) {
+		memo_entry *e = &memo[(idx + i) & (MEMO_SIZE - 1)];
+		if(!e->used) return 0;
+		if(e->x == x && e->y == y) {
+			*value = e->value;
+			return 1;
+		}
+	}
+
+	return 0;
+}
+
+static void memo_put(dn x, dn y, dn value) {
+	size_t idx = memo_hash(x, y);
+
+	for(size_t i = 0; i < MEMO_SIZE; i++) {
+		memo_entry *e = &memo[(idx + i) & (MEMO_SIZE - 1)];
+		if(!e->used || (e->x == x && e->y == y)) {
+			e->x = x;
+			e->y = y;
+			e->value = value;
+			e->used = 1;
+			return;
+		}
+	}
+}
+
+dn delannoy(dn x, dn y) {
 	if(x==0 || y==0) return 1;
 
-	if(memo) {
-		for(size_t i=0; i<memo->size; i++) {
-			if(memo->entries[i].p.x == x && memo->entries[i].p.y == y) {
-				return memo->entries[i].result;
-			}
-		}
-	}
+	dn cached = 0;
+	if(memo_get(x, y, &cached)) return cached;
 
-	dn a = delannoy(x-1, y, memo);
-	dn b = delannoy(x-1, y-1, memo);
-	dn c = delannoy(x, y-1, memo);
+	dn a = delannoy(x-1, y  );
+	dn b = delannoy(x-1, y-1);
+	dn c = delannoy(  x, y-1);
 
 	dn result = a + b + c;
-
-	if(memo) {
-		if(memo->size == memo->capacity) {
-			memo->capacity = memo->capacity ? memo->capacity * 2 : 1;
-			memo->entries = realloc(memo->entries, memo->capacity * sizeof(memo_entry));
-		}
-		memo->entries[memo->size++] = (memo_entry){.p = {x, y}, .result = result};
-	}
-
+	memo_put(x, y, result);
 	return result;
 }
 
@@ -63,18 +82,16 @@ int main(int argc, char **argv) {
 	int n = atoi(argv[1]);
 	if(n >= NUM_RESULTS) {
 		printf("N too large (can only check up to %d)\n", NUM_RESULTS);
+		exit(-1);
 	}
 
 	dn result = 0;
-	memo_table memo = {NULL, 0, 0};
-	result = delannoy(n, n, &memo);
+	result = delannoy(n, n);
 	
 	if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
-	} else {
-		printf("Verification: ERR\nResult too large to verify\n");
+		return EXIT_SUCCESS;
 	}
-	printf("result %llu\n", result);	
-	free(memo.entries);
-	return EXIT_SUCCESS;
+	printf("Verification: ERR\n");	
+	return EXIT_FAILURE;
 }

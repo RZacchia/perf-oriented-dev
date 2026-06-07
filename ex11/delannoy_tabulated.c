@@ -5,40 +5,30 @@
 typedef unsigned long dn;
 
 dn delannoy(dn x, dn y) {
-	if(x==0 || y==0) return 1;
-	dn **table = malloc(sizeof(dn *) * x);
-	if(table == NULL) {
+	dn *row = malloc(sizeof(dn) * (x + 1));
+	if(row == NULL) {
 		fprintf(stderr, "Memory allocation failed\n");
 		exit(EXIT_FAILURE);
 	}
 
-	for (size_t i = 0; i < x; ++i){
-		table[i] = malloc(sizeof(dn) * y);
-		if(table[i] == NULL) {
-			fprintf(stderr, "Memory allocation failed\n");
-			exit(EXIT_FAILURE);
-		}
+	for (dn i = 0; i <= x; ++i) {
+		row[i] = 1;
 	}
+    for (dn i = 0; i < x; i++) {
+        dn prev = 1;
+        for (dn j = 1; j <= y; j++) {
+            dn temp = row[j];
+            row[j] = prev + temp + row[j - 1];
+            prev = temp;
+        }
+    }
 
-	for (size_t i = 0; i < x; ++i) {
-		for (size_t j = 0; j < y; ++j) {
-			if(i == 0 || j == 0) {
-				table[i][j] = 1;
-			} else {
-				table[i][j] = table[i-1][j] + table[i-1][j-1] + table[i][j-1];
-			}
-		}
-	}
-
-	dn result = table[x-1][y-1];
-
-	for (size_t i = 0; i < x; ++i) {
-		free(table[i]);
-	}
-	free(table);
-
-	return result;
+    // return answer
+    dn result = row[y];
+    free(row);
+    return result;
 }
+
 
 dn DELANNOY_RESULTS[] = {
 	1, 3, 13, 63, 321, 1683, 8989, 48639, 265729, 1462563, 8097453, 45046719, 251595969, 1409933619, 
@@ -50,10 +40,10 @@ int NUM_RESULTS = sizeof(DELANNOY_RESULTS) / sizeof(dn);
 int main(int argc, char **argv) {
 	if(argc<2) {
 		printf("Usage: delannoy N [+t]\n");
-		
+		exit(EXIT_FAILURE);
 	}
 
-	int n = 20;
+	int n = atoi(argv[1]);
 	if(n >= NUM_RESULTS) {
 		printf("N too large (can only check up to %d)\n", NUM_RESULTS);
 	}
@@ -64,8 +54,8 @@ int main(int argc, char **argv) {
 	if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
 	} else {
-		printf("Verification: ERR\nResult too large to verify\n");
+		printf("Verification: ERR\n");
 	}
-	printf("result %llu\n", result);	
+	printf("result %lu\n", result);	
 	return EXIT_SUCCESS;
 }
