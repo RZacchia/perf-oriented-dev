@@ -55,6 +55,7 @@ int main(int argc, char **argv) {
 	clock_gettime(CLOCK_MONOTONIC, &t0);
 	result = delannoy(n, n);
 	clock_gettime(CLOCK_MONOTONIC, &t1);	
+	printf("Tabulated delannoy(%d, %d) = %lu\n", n, n, result);
 	if(result == DELANNOY_RESULTS[n]) {
 		printf("Verification: OK\n");
 	} else {
@@ -64,10 +65,7 @@ int main(int argc, char **argv) {
 	unsigned long long elapsed_ns =
 		(unsigned long long)(t1.tv_sec - t0.tv_sec) * 1000000000ull +
 		(unsigned long long)(t1.tv_nsec - t0.tv_nsec);
-	printf("time: %llu ns (%.3f us, %.3f ms, %.6f s)\n",
-		elapsed_ns,
-		(double)elapsed_ns / 1e3,
-		(double)elapsed_ns / 1e6,
-		(double)elapsed_ns / 1e9);
+	printf("time: %.3f us\n",
+		(double)elapsed_ns / 1e3);
 	return EXIT_SUCCESS;
 }

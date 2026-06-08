@@ -90,7 +90,7 @@ int main(int argc, char **argv) {
 	clock_gettime(CLOCK_MONOTONIC, &t0);
 	result = delannoy(n, n);
 	clock_gettime(CLOCK_MONOTONIC, &t1);
-
+	printf("Memoized delannoy(%d, %d) = %lu\n", n, n, result);
 	unsigned long long elapsed_ns =
 		(unsigned long long)(t1.tv_sec - t0.tv_sec) * 1000000000ull +
 		(unsigned long long)(t1.tv_nsec - t0.tv_nsec);

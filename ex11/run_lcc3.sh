@@ -45,13 +45,6 @@ for j in {1..10}
     run_timed delannoy_tabulated ./delannoy_tabulated $i
   done
     
-
-  for i in {13..30}
-    do
-    echo "========== n $i =========="
-    run_timed delannoy_memoized ./delannoy_memoized $i
-    run_timed delannoy_tabulated ./delannoy_tabulated $i
-  done
 done
 
 # python3 ../parse_bench_log.py ../../${SLURM_JOB_ID}.log ../../results_O3.csv

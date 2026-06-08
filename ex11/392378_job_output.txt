@@ -1,0 +1,1837 @@
+========== Starting building ================
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cb76/cb761245/perf-oriented-dev/ex11/build
+ninja: no work to do.
+========== Starting running ================
+========== Run 1 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.083 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.072 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 40.378 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.254 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.857 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 43.033 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.457 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 11.590 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 38.826 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.792 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 21.881 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 39.709 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.325 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 38.865 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 38.478 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.543 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.753 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 38.815 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.610 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 87.190 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 35.890 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 137.338 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 125.187 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 40.182 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 616.160 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 142.809 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 44.826 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2188.973 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 153.941 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 40.642 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24746.248 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 185.755 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 36.619 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144899.317 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 238.417 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 40.507 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630223.942 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 257.887 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 38.589 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3192128.470 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 303.200 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 49.316 us
+========== Run 2 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.096 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.084 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 35.864 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.133 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.579 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 40.372 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.262 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.594 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 35.776 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.559 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 22.270 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 40.508 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.366 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 37.965 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 38.760 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.595 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.161 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 40.549 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.688 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 84.793 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 35.921 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.975 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 103.934 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 43.027 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 599.056 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 124.566 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 41.030 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2187.183 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 153.680 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 41.337 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24815.114 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 188.922 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 40.372 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144247.049 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 241.518 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 35.997 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630019.141 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 262.202 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 41.465 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3199242.218 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 339.273 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 35.231 us
+========== Run 3 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.076 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.075 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 43.485 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.150 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.465 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 39.549 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.385 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 9.959 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 35.938 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.617 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 20.847 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 37.709 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.288 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 39.419 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 35.773 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.578 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 64.932 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 41.063 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.251 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 113.585 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 37.706 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 142.608 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 102.355 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 35.520 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 617.384 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 133.646 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 61.087 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2223.677 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 169.257 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 39.748 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 25041.453 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 188.877 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 42.975 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144956.982 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 243.019 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 37.859 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630747.324 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 250.561 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 42.460 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3194883.784 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 326.419 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 36.198 us
+========== Run 4 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.082 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.065 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 35.946 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.127 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.494 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 37.631 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.252 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.034 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 39.556 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.567 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 21.673 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 34.944 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.336 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 43.129 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 41.196 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.598 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.519 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 35.704 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.647 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 90.800 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 37.766 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.915 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 102.151 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 41.081 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 616.282 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 130.247 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 39.570 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2217.343 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 164.134 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 46.304 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24972.067 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 196.111 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 39.763 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144975.894 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 225.943 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 39.671 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 637924.658 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 264.339 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 39.407 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3195732.994 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 325.558 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 36.011 us
+========== Run 5 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.082 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.076 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 38.487 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.136 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 4.017 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 36.514 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.257 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.624 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 36.971 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 1.256 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 26.689 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 40.224 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.398 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 37.307 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 39.138 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.581 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.552 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 40.570 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 34.078 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 94.840 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 43.042 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.935 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 115.981 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 36.159 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 619.384 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 131.836 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 38.874 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2215.345 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 161.486 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 37.877 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 25006.785 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 193.661 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 36.253 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144596.793 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 235.495 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 38.438 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630396.784 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 247.682 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 41.130 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3192123.670 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 344.329 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 36.090 us
+========== Run 6 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.074 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.069 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 48.624 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.143 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.907 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 42.541 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.267 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 11.740 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 36.296 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.911 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 24.829 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 40.781 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.329 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 38.791 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 40.601 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.895 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.247 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 35.504 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.590 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 88.303 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 40.381 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.916 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 117.856 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 44.687 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 626.368 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 138.789 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 35.957 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2216.995 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 162.775 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 37.581 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24861.673 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 185.940 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 35.098 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144612.371 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 235.966 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 39.741 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630003.909 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 253.413 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 38.327 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3192773.713 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 307.688 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 40.983 us
+========== Run 7 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.081 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.079 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 38.252 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.135 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 4.189 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 41.091 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.265 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 12.698 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 36.018 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.559 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 21.804 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 40.243 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.338 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 40.271 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 36.097 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.592 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 59.269 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 40.629 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.555 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 89.636 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 39.065 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.901 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 104.870 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 39.682 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 637.342 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 126.922 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 40.508 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2187.972 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 155.330 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 35.756 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24817.613 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 185.166 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 38.640 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144059.839 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 232.305 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 40.498 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 629636.971 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 251.307 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 41.229 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3193999.463 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 346.360 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 40.498 us
+========== Run 8 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.077 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.072 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 45.200 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.130 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.516 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 35.882 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.271 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.206 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 38.319 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.557 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 21.539 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 40.134 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.321 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 41.108 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 35.871 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.564 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 62.073 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 38.733 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.666 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 87.765 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 40.718 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.906 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 115.249 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 41.185 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 614.449 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 124.430 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 38.009 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2247.583 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 154.259 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 39.022 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24816.143 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 184.760 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 40.815 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144536.987 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 236.723 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 40.864 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630700.187 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 258.950 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 39.886 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3193978.473 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 299.241 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 36.351 us
+========== Run 9 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.070 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.064 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 35.968 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.140 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.676 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 40.381 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.264 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.570 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 42.453 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.559 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 23.431 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 41.395 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.342 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 39.126 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 40.363 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.596 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 62.936 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 42.821 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.709 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 96.133 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 38.567 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.938 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 103.980 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 42.075 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 617.630 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 126.405 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 40.608 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2198.841 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 154.518 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 43.553 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24698.679 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 184.484 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 36.253 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144967.388 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 234.749 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 38.392 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 629692.673 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 241.703 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 40.010 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3198709.078 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 336.307 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 43.042 us
+========== Run 10 / 10 ==========
+========== n 0 ==========
+Naive delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.082 us
+Memoized delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 0.091 us
+Tabulated delannoy(0, 0) = 1
+Verification: OK
+result 1
+time: 40.647 us
+========== n 1 ==========
+Naive delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 0.137 us
+Memoized delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 3.434 us
+Tabulated delannoy(1, 1) = 3
+Verification: OK
+result 3
+time: 48.736 us
+========== n 2 ==========
+Naive delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 0.261 us
+Memoized delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 10.619 us
+Tabulated delannoy(2, 2) = 13
+Verification: OK
+result 13
+time: 42.960 us
+========== n 3 ==========
+Naive delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 0.558 us
+Memoized delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 22.466 us
+Tabulated delannoy(3, 3) = 63
+Verification: OK
+result 63
+time: 38.064 us
+========== n 4 ==========
+Naive delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 1.333 us
+Memoized delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 39.636 us
+Tabulated delannoy(4, 4) = 321
+Verification: OK
+result 321
+time: 35.640 us
+========== n 5 ==========
+Naive delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 6.608 us
+Memoized delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 61.233 us
+Tabulated delannoy(5, 5) = 1683
+Verification: OK
+result 1683
+time: 35.975 us
+========== n 6 ==========
+Naive delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 32.482 us
+Memoized delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 84.721 us
+Tabulated delannoy(6, 6) = 8989
+Verification: OK
+result 8989
+time: 59.052 us
+========== n 7 ==========
+Naive delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 124.837 us
+Memoized delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 103.530 us
+Tabulated delannoy(7, 7) = 48639
+Verification: OK
+result 48639
+time: 40.445 us
+========== n 8 ==========
+Naive delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 608.542 us
+Memoized delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 129.386 us
+Tabulated delannoy(8, 8) = 265729
+Verification: OK
+result 265729
+time: 40.411 us
+========== n 9 ==========
+Naive delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 2212.379 us
+Memoized delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 159.028 us
+Tabulated delannoy(9, 9) = 1462563
+Verification: OK
+result 1462563
+time: 43.722 us
+========== n 10 ==========
+Naive delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 24918.043 us
+Memoized delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 194.086 us
+Tabulated delannoy(10, 10) = 8097453
+Verification: OK
+result 8097453
+time: 42.988 us
+========== n 11 ==========
+Naive delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 144735.594 us
+Memoized delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 238.133 us
+Tabulated delannoy(11, 11) = 45046719
+Verification: OK
+result 45046719
+time: 38.521 us
+========== n 12 ==========
+Naive delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 630370.838 us
+Memoized delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 288.064 us
+Tabulated delannoy(12, 12) = 251595969
+Verification: OK
+result 251595969
+time: 36.172 us
+========== n 13 ==========
+Naive delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 3189429.029 us
+Memoized delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 320.585 us
+Tabulated delannoy(13, 13) = 1409933619
+Verification: OK
+result 1409933619
+time: 40.425 us
+========= Starting cleaning ================
